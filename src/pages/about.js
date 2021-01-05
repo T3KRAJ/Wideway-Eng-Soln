@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import AboutData from "../components/AboutData"
 
 const AboutPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>wideway About Page</h1>
-    <button className="bg-blue-600">Click</button>
+    <AboutData/>
   </Layout>
 )
 
