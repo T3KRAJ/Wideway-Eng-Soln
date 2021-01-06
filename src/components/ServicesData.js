@@ -1,5 +1,4 @@
 import React from "react"
-import { FaBeer, FaUber, FaUser } from "react-icons/fa"
 import innovative from "../assets/images/innovation.svg"
 import transportation from "../assets/images/transportation.svg"
 import factory from "../assets/images/factory.svg"
@@ -11,8 +10,15 @@ const ServicesData = () => {
         <h1 className="uppercase tracking-wide text-black  text-4xl text-indigo-500 font-semibold mb-5 text-center mt-5">
           Our Services
         </h1>
-        <ServiceCard />
-        <ServiceCard />
+        <div className="-mx-4 flex flex-wrap ">
+        <ServiceCard src={innovative} service="Innovation"/>
+        <ServiceCard src= {transportation} service="Hospitality and Transportation" />
+        <ServiceCard src= {factory} service="Manufacturing "/> 
+        <ServiceCard src= {factory} service=" Manufacturing "/>
+        <ServiceCard src={innovative} service="Innovation"/>
+        <ServiceCard src= {transportation} service=" Hospitality and Transportation" />
+        
+        </div>
       </div>
     </div>
   )
