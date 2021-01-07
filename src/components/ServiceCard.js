@@ -1,12 +1,17 @@
-import React from 'react'
-
+import React, {useEffect} from 'react'
+import AOS from 'aos';
 
 const ServiceCard = (props) => {
+  useEffect(() => {
+    AOS.init({delay:200,duration:1200,once:false});
+  })
+
+ 
     return (
        
           <div
             className="w-full flex flex-col p-4 sm:w-full lg:w-1/3 "
-            style={{ backgroundImage: "url(../assets/images/innovative.jpg)" }}
+            data-aos="zoom-in-up"
           >
             <div className=" hover:bg-purple-100 flex-1 px-10 py-12 bg-white rounded-lg shadow-lg text-center items-center hover:mt-48">
               <img
