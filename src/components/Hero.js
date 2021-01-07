@@ -1,9 +1,18 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import AOS from 'aos';
 import styled from 'styled-components'
 import { Button } from './Button'
 import HeroImg from '../assets/images/hero.jpg'
-
+import "aos/dist/aos.css"
 function Hero() {
+    useEffect(() => {
+        AOS.init({
+          once: false,
+          duration:2000,
+          delay:200
+        });
+      }, []);
+    
     return (
         <HeroContainer>
             <HeroBg>
@@ -12,7 +21,7 @@ function Hero() {
             <HeroContent>
                 <HeroItems>
                     <HeroH1>
-                    Accelerating Product Engineering for Enterprises
+                    <div data-aos="zoom-in">Accelerating Product Engineering for Enterprises</div>
                     </HeroH1>
                     <Button primary="true" big="true" to="/trips">Get Started</Button>
                 </HeroItems>
