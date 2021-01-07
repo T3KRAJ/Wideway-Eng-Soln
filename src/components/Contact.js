@@ -1,10 +1,13 @@
-import React from "react"
-
+import React, {useEffect} from "react"
+import AOS from 'aos';
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({delay:200,duration:1200,once:false});
+  })
   return (
-    <div id="contact" className="md:flex max-w-md mx-auto rounded-xl shadow-2xl overflow-hidden md:max-w-5xl mt-16 bg-gradient-to-r from-purple-200 via-pink-200 to-red-200 ">
-      <div className="p-8 md:max-w-2xl w-full md:w-1/2 lg:w-1/2 text-center sm:text-left mb-5 text-white-500 mt-1">
-        <div className="uppercase tracking-wide text-sm text-indigo-500  text-xl text-black  font-black font-bold mb-5 text-center">
+    <div id="contact" className="md:flex max-w-md mx-auto rounded-xl shadow-2xl overflow-hidden max-w-screen-xl mx-auto md:max-w-screen-xl mt-16 bg-gradient-to-r from-purple-200 via-pink-200 to-red-200 ">
+      <div className="p-8 md:max-w-2xl w-full md:w-1/2 lg:w-1/2 text-center sm:text-left mb-5 text-white-500 mt-1"  data-aos="fade-right">
+        <div data-aos="fade-down" className="uppercase tracking-wide text-sm text-indigo-500  text-xl text-black  font-black font-bold mb-5 text-center">
           Our Office
         </div>
 
@@ -22,8 +25,8 @@ const Contact = () => {
         </p>
       </div>
 
-      <div className="md:flex-shrink-0 w-full md:w-1/2 lg:w-1/2 mt-9">
-        <div className="uppercase tracking-wide text-sm text-sm   text-xl text-indigo-500 font-extrabold text-center">
+      <div className="md:flex-shrink-0 w-full md:w-1/2 lg:w-1/2 mt-9" data-aos="fade-left">
+        <div data-aos="fade-down" className="uppercase tracking-wide text-sm text-sm   text-xl text-indigo-500 font-extrabold text-center">
           Send us a message
         </div>
         <form action="#" className="shadow-sm rounded-md md:max-w-4xl p-8">

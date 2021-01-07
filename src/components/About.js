@@ -1,18 +1,22 @@
-import React from "react"
+import React, {useEffect} from "react"
+import AOS from 'aos';
 import { Button } from "./Button"
 const About = () => {
   const logo = require("../assets/images/logo.png")
-
+  useEffect(() => {
+    AOS.init({delay:200,duration:1200,once:false});
+  })
   return (
-    <div id="about" className="md:flex max-w-md mx-auto rounded-xl shadow-2xl overflow-hidden md:max-w-5xl mt-16  bg-gradient-to-r from-purple-200 via-pink-200 to-red-200 ">
+    <div id="about" className="md:flex max-w-md mx-auto rounded-xl shadow-2xl overflow-hidden max-w-screen-xl mx-auto md:max-w-screen-xl mt-16  bg-gradient-to-r from-purple-200 via-pink-200 to-red-200 ">
       <img
         className="h-48 md:h-auto lg:h-auto w-full md:w-1/3  lg:w-1/3  flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
         src={logo}
         style={{ backgroundImage: "url('../assets/images/logo.png')" }}
         title="Site's logo"
         alt="logo"
+        data-aos="flip-left"
       />
-      <div className="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal bg-gradient-to-r from-purple-200 via-pink-200 to-red-200">
+      <div  data-aos="fade-left" className="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal bg-gradient-to-r from-purple-200 via-pink-200 to-red-200">
         <div className="mb-8">
           <div className="text-black mb-2 text-center">
             <span className="uppercase tracking-wide text-black  text-4xl text-indigo-500 font-semibold mb-5 text-center mt-5">
