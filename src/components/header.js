@@ -4,11 +4,14 @@ import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
+import {NavLogo} from '../assets/images/logo.png'
 
 const Header = ({ toggle }) => {
   return (
     <Nav>
-      <NavLink to="/">Wideway Eng Soln</NavLink>
+      <NavLink to="/">
+        <Logo src={NavLogo} alt="logo"/>
+      </NavLink>
       <Bars onClick={toggle} />
       <NavMenu>
         {menuData.map(({ link, title }, index) => (
@@ -40,11 +43,15 @@ const Nav = styled.nav`
   background: #212221;
   height: 80px;
   display: flex;
+  top: 0;
+  width: 100%;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1300px) / 2);
   z-index: 100;
-  position: relative;
+  overflow: hidden;
+  position: fixed;
 `
+
 const NavLink = styled(Link)`
   color: #fff;
   display: flex;
@@ -68,7 +75,12 @@ const Bars = styled(FaBars)`
     cursor: pointer;
   }
 `
-
+const Logo = styled.img `
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+`
 const NavMenu = styled.div`
   display: flex;
   align-items: center;

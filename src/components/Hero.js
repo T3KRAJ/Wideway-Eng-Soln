@@ -21,7 +21,7 @@ function Hero() {
             <HeroContent>
                 <HeroItems>
                     <HeroH1>
-                    <div data-aos="zoom-in">Accelerating Product Engineering for Enterprises</div>
+                        <div data-aos="zoom-in">Accelerating Product Engineering for Enterprises</div>
                     </HeroH1>
                     <Button primary="true" big="true" to="/trips">Get Started</Button>
                 </HeroItems>
@@ -41,7 +41,6 @@ const HeroContainer = styled.div `
     height: 100vh;
     padding: 0 1rem;
     position: relative;
-    margin-top: -80px;
     color: #fff;
     :before {
         content: "";

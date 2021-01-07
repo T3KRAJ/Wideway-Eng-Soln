@@ -1,0 +1,39 @@
+[
+    {
+        "img": "../assets/images/one.jpg",
+        "alt": "one",
+        "name": "Kathmandu, Nepal",
+        "button": "View Destination"
+    },
+    {
+        "img": "../assets/images/two.jpg",
+        "alt": "Rara Lake",
+        "name": "Dehli, India",
+        "button": "View Destination"
+    },
+    {
+        "img": "../assets/images/three.jpg",
+        "alt": "three",
+        "name": "Nagarkot, Nepal",
+        "button": "View Destination"
+    },
+    {
+        "img": "../assets/images/four.jpg",
+        "alt": "four",
+        "name": "Annapurna base camp",
+        "button": "View Destination"
+    },
+    {
+        "img": "../assets/images/five.jpg",
+        "alt": "five",
+        "name": "Nagarkot, Nepal",
+        "button": "View Destination"
+    },
+    {
+        "img": "../assets/images/six.jpg",
+        "alt": "six",
+        "name": "Annapurna base camp",
+        "button": "View Destination"
+    }
+
+]
