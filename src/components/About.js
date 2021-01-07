@@ -15,15 +15,11 @@ const About = () => {
       <div className="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal bg-gradient-to-r from-purple-200 via-pink-200 to-red-200">
         <div className="mb-8">
           <div className="text-black mb-2 text-center">
-            <span className="uppercase tracking-wide text-black  text-4xl text-indigo-500 font-semibold mb-5 text-center mt-5">
+            <span className="uppercase tracking-wide text-black  text-4xl text-indigo-500 font-semibold mb-5 text-center mt-1">
               ABOUT US
             </span>
-            <br />
-            <span className="text-left font-bold text-sm">
-              SIMPLE THINGS SHOULD BE SIMPLE, COMPLEX THINGS SHOULD BE POSSIBLE.
-            </span>
           </div>
-          <p className="text-grey-darker text-base text-left font-serif mt-7 ">
+          <p className="text-lg font-semibold mt-7">
             We are Wideway Engineering Solution, providing multiple IT Services
             in various fields. We work together to design, create, build,
             develop products that we are proud of, for the people who believe in

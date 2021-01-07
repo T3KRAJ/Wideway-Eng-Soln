@@ -5,7 +5,7 @@ import factory from "../assets/images/factory.svg"
 import ServiceCard from "./ServiceCard"
 const Services = () => {
   return (
-    <div id="services" className="mt-10">
+    <div id="services" className="mt-10 mb-10">
       <div className="max-w-screen-xl mx-auto px-4 bg-gray-100 mt-10 items-center text-center ">
         <h1 className="uppercase tracking-wide text-black text-4xl text-indigo-500 font-semibold mb-5 text-center mt-5">
           Our Services
