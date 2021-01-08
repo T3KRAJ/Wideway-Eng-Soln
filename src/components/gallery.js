@@ -51,7 +51,11 @@ const Gallery = () => {
   }
   return (
     <ProductContainer>
-      <ProductHeading>Gallery</ProductHeading>
+      <div className="text-black mb-10 text-center">
+              <span className="uppercase tracking-wide text-black  text-4xl text-indigo-500 font-semibold mb-5 text-center">
+                Gallery
+              </span>
+            </div>
       <ProductWrapper>{getPic(data)}</ProductWrapper>
     </ProductContainer>
   )
@@ -65,12 +69,6 @@ const ProductContainer = styled.div`
   color: #fff;
 `
 
-const ProductHeading = styled.h1`
-  font-size: clamp((3.2rem, 5vw, 3rem));
-  text-align: center;
-  margin-bottom: 5rem;
-  color: #000;
-`
 const ProductWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);

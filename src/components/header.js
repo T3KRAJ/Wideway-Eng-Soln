@@ -4,13 +4,14 @@ import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
-import {NavLogo} from '../assets/images/logo.png'
 
 const Header = ({ toggle }) => {
+  const logo = require("../assets/images/logo.png")
+
   return (
     <Nav>
       <NavLink to="/">
-        <Logo src={NavLogo} alt="logo"/>
+        <Logo src={logo} alt="logo"/>
       </NavLink>
       <Bars onClick={toggle} />
       <NavMenu>
@@ -76,10 +77,8 @@ const Bars = styled(FaBars)`
   }
 `
 const Logo = styled.img `
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+    width: 50%;
+    height: 60%;
 `
 const NavMenu = styled.div`
   display: flex;

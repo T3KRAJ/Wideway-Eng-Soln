@@ -4,6 +4,9 @@ import transportation from "../assets/images/transportation.svg"
 import factory from "../assets/images/factory.svg"
 import ServiceCard from "./ServiceCard"
 import AOS from 'aos';
+import styled from "styled-components"
+
+
 const Services = () => {
   useEffect(() => {
     const AOS = require("aos");
@@ -18,9 +21,9 @@ const Services = () => {
     }
   });
   return (
-    <div id="services" className="mt-10 mb-10">
-      <div className="max-w-screen-xl mx-auto px-4 bg-gray-100 mt-10 items-center text-center ">
-        <h1 className="uppercase tracking-wide text-black text-4xl text-indigo-500 font-semibold mb-5 text-center mt-5">
+    <ServiceContainer id="services">
+      <div className="max-w-screen-xl mx-auto px-4 mt-10 mb-10 items-center text-center">
+        <h1 className="uppercase tracking-wide text-black text-4xl text-indigo-500 font-semibold text-center mt-10 mb-10">
           Our Services
         </h1>
         <div className="-mx-4 flex flex-wrap ">
@@ -32,7 +35,32 @@ const Services = () => {
         <ServiceCard src= {transportation} service=" Hospitality and Transportation" />
         </div>
       </div>
-    </div>
+    </ServiceContainer>
   )
 }
 export default Services
+
+
+const ServiceContainer = styled.div`
+  display: flex;
+  background: #ffd;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 0 1rem;
+  position: relative;
+  :before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+  }
+`
