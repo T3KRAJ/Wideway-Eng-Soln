@@ -5,15 +5,15 @@ import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
 
-const Header = ({ toggle }) => {
+const Header = ( props) => {
   const logo = require("../assets/images/logo.png")
 
   return (
     <Nav>
       <NavLink to="/">
-        <Logo src={logo} alt="logo"/>
+        <Logo src={logo} alt="logo" />
       </NavLink>
-      <Bars onClick={toggle} />
+      <Bars onClick={props.toggle} />
       <NavMenu>
         {menuData.map(({ link, title }, index) => (
           <NavLink
@@ -28,6 +28,14 @@ const Header = ({ toggle }) => {
             {title}
           </NavLink>
         ))}
+        <label className="switch">
+          <input 
+          type="checkbox"
+          onChange={()=>{props.setTheme(!(props.theme))}}
+          checked={props.theme}  
+          />
+          <span className="slider round"></span>
+        </label>
       </NavMenu>
       <NavBtn>
         <Button primary="true" round="true" to="/trips">
@@ -76,9 +84,9 @@ const Bars = styled(FaBars)`
     cursor: pointer;
   }
 `
-const Logo = styled.img `
-    width: 50%;
-    height: 60%;
+const Logo = styled.img`
+  width: 50%;
+  height: 60%;
 `
 const NavMenu = styled.div`
   display: flex;
