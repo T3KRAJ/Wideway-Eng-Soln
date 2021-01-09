@@ -5,13 +5,13 @@ const Contact = () => {
     AOS.init({delay:200,duration:1200,once:false});
   })
   return (
-    <div id="contact" className="md:flex max-w-md mx-auto rounded-xl shadow-2xl overflow-hidden max-w-screen-xl mx-auto md:max-w-screen-xl mt-16 bg-gradient-to-r from-purple-200 via-pink-200 to-red-200 ">
-      <div className="p-8 md:max-w-2xl w-full md:w-1/2 lg:w-1/2 text-center sm:text-left mb-5 text-white-500 mt-1"  data-aos="fade-right">
-        <div data-aos="fade-down" className="uppercase tracking-wide text-sm text-indigo-500  text-xl text-black  font-black font-bold mb-5 text-center">
+    <div id="contact" className="md:h-screen md:flex max-w-md mx-auto rounded-xl shadow-2xl overflow-hidden max-w-screen-xl mx-auto md:max-w-screen-xl mt-16 ">
+      <div className="p-8 md:max-w-2xl w-full md:w-1/2 lg:w-1/2 text-center sm:text-left mb-5 text-white-900 mt-1"  data-aos="fade-right">
+        <div data-aos="fade-down" className="uppercase tracking-wide text-sm text-black-900  text-xl text-black  font-black font-bold mb-5 text-center">
           Our Office
         </div>
 
-        <p className="mt-2 text-gray-500 text-left tracking-wider font-bold">
+        <p className="mt-2 text-gray-900 text-left tracking-wider font-bold">
           Wipro Limited
           <br />
           Doddakannelli, Sarjapur Road
@@ -31,7 +31,7 @@ const Contact = () => {
         </div>
         <form action="#" className="shadow-sm rounded-md md:max-w-4xl p-8">
           <div className="mb-6">
-            <label htmlFor="name" className="mb-3 block text-gray-700">
+            <label htmlFor="name" className="mb-3 block text-gray-900">
               Full name:
             </label>
             <input

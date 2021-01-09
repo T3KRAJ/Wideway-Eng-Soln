@@ -6,14 +6,18 @@ import Hero from "../components/Hero"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import Services from "../components/Services"
-
+import "./index.css"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <label class="switch">
+      <input type="checkbox" />
+      <span class="slider round"></span>
+    </label>
     <Hero />
     <About />
     <Services />
-    <Gallery />
+    {/* <Gallery /> */}
     <Contact />
   </Layout>
 )

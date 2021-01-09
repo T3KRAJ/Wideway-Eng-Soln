@@ -1,4 +1,5 @@
-import React, { useEffect } from "react"
+import
+ React, { useEffect } from "react"
 import AOS from "aos"
 import { Button } from "./Button"
 import styled from "styled-components"
@@ -8,14 +9,15 @@ const About = () => {
   useEffect(() => {
     AOS.init({ delay: 200, duration: 1200, once: false })
   })
-  return (
-    <AboutContainer id="about">
+  return ( 
+  
       <div
-        
-        className="md:flex max-w-md mx-auto rounded-xl shadow-2xl overflow-hidden max-w-screen-xl mx-auto md:max-w-screen-xl  bg-gradient-to-r from-purple-200 via-pink-200 to-red-200 "
+        id = "about"
+        className="md:h-screen items-center  md:flex max-w-md mx-auto rounded-xl shadow-2xl overflow-hidden mt-48 mb-24 max-w-screen-xl mx-auto md:max-w-screen-xl bg-gray"
       >
         <img
-          className="h-50 md:h-auto lg:h-auto w-full md:w-1/3  lg:w-1/3  flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+          
+          className="h-50  md:h-auto lg:h-auto w-full md:w-1/3  lg:w-1/3  flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
           src={logo}
           style={{ backgroundImage: "url('../assets/images/logo.png')" }}
           title="Site's logo"
@@ -23,8 +25,9 @@ const About = () => {
           data-aos="flip-left"
         />
         <div
+         
           data-aos="fade-left"
-          className="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal bg-gradient-to-r from-purple-200 via-pink-200 to-red-200"
+          className="border-r border-b border-l lg:border-l-0 lg:border-t lg:border-grey  rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
         >
           <div className="mb-10 mt-4">
             <div className="text-black mb-2 text-center">
@@ -58,7 +61,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </AboutContainer>
   )
 }
 export default About
