@@ -6,9 +6,14 @@ import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
 
 const Header = ( props) => {
-  const logo = require("../assets/images/logo.png")
+  const logo = require("../assets/images/logo.svg")
 
   return (
+    <>
+    <Bar>
+      <p>+49 30 209164630</p>
+      <p>info@widewayengineers.com</p>
+    </Bar>
     <Nav>
       <NavLink to="/">
         <Logo src={logo} alt="logo" />
@@ -43,16 +48,23 @@ const Header = ( props) => {
         </Button>
       </NavBtn>
     </Nav>
+    </>
   )
 }
 
 export default Header
 
+const Bar = styled.div `
+  display: flex;
+  background: blue;
+  color: #fff;
+  justify-content: space-around;
+  position: sticky;
+`
 const Nav = styled.nav`
   background: #212221;
   height: 80px;
   display: flex;
-  top: 0;
   width: 100%;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1300px) / 2);

@@ -51,7 +51,7 @@ const Gallery = () => {
   }
   return (
     <ProductContainer>
-      <div className="text-black mb-10 text-center">
+      <div className="text-black mb-10 mt-10 text-center">
               <span className="uppercase tracking-wide text-black  text-4xl text-indigo-500 font-semibold mb-5 text-center">
                 Gallery
               </span>
@@ -67,6 +67,7 @@ const ProductContainer = styled.div`
   min-height: 100vh;
   padding: 5rem calc((100vw - 1300px) / 2);
   color: #fff;
+
 `
 
 const ProductWrapper = styled.div`

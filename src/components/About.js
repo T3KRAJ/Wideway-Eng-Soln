@@ -5,7 +5,7 @@ import { Button } from "./Button"
 import styled from "styled-components"
 
 const About = () => {
-  const logo = require("../assets/images/logo.png")
+  const logo = require("../assets/images/logo.svg")
   useEffect(() => {
     AOS.init({ delay: 200, duration: 1200, once: false })
   })
@@ -27,7 +27,7 @@ const About = () => {
         <div
          
           data-aos="fade-left"
-          className="border-r border-b border-l lg:border-l-0 lg:border-t lg:border-grey  rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+          className="rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
         >
           <div className="mb-10 mt-4">
             <div className="text-black mb-2 text-center">

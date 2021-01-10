@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {Link} from 'gatsby'
+import {Link} from 'react-scroll'
 
 export const Button = styled(Link)`
     background: ${({primary}) => (primary ? '#F26A2E' : '#077BF1')};

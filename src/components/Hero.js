@@ -23,7 +23,7 @@ function Hero() {
                     <HeroH1>
                         <div data-aos="zoom-in">Accelerating Product Engineering for Enterprises</div>
                     </HeroH1>
-                    <Button primary="true" big="true" to="/trips">Get Started</Button>
+                    <Button primary="true" big="true" to="about">Get Started</Button>
                 </HeroItems>
             </HeroContent>
         </HeroContainer>
