@@ -7,6 +7,7 @@ import { Button } from "./Button"
 
 const Header = ( props) => {
   const logo = require("../assets/images/logo.svg")
+  const logo2 = require("../assets/images/logo 2.png")
 
   return (
     <>
@@ -16,7 +17,7 @@ const Header = ( props) => {
     </Bar>
     <Nav>
       <NavLink to="/">
-        <Logo src={logo} alt="logo" />
+        <Logo src={logo2} alt="logo" />
       </NavLink>
       <Bars onClick={props.toggle} />
       <NavMenu>
@@ -97,8 +98,8 @@ const Bars = styled(FaBars)`
   }
 `
 const Logo = styled.img`
-  width: 50%;
-  height: 60%;
+  width: 20%;
+  height: 100%;
 `
 const NavMenu = styled.div`
   display: flex;

@@ -6,6 +6,7 @@ import styled from "styled-components"
 
 const About = () => {
   const logo = require("../assets/images/logo.svg")
+  const logo2 = require("../assets/images/logo 2.png")
   useEffect(() => {
     AOS.init({ delay: 200, duration: 1200, once: false })
   })
@@ -18,7 +19,7 @@ const About = () => {
         <img
           
           className="h-50  md:h-auto lg:h-auto w-full md:w-1/3  lg:w-1/3  flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          src={logo}
+          src={logo2}
           style={{ backgroundImage: "url('../assets/images/logo.png')" }}
           title="Site's logo"
           alt="logo"
@@ -53,7 +54,7 @@ const About = () => {
               <Button
                 round="true"
                 to="/contact"
-                className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                className="button bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
               >
                 Contact us
               </Button>
