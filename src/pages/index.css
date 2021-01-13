@@ -62,12 +62,12 @@
   }
 
   .dark-mode{
-      background-color: #232723;
+      background-color: #212221;
       color: #fff;
   }
   .dark-mode #about{
       color: rgb(238, 218, 218);
-      background-color: #7d837d;
+      background-color: #525352;
       border:none;
   }
   .dark-mode #about .button{

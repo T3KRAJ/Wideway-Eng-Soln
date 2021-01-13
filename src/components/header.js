@@ -6,18 +6,18 @@ import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
 
 const Header = ( props) => {
-  const logo = require("../assets/images/logo.svg")
-  const logo2 = require("../assets/images/logo 2.png")
+  const navlogo = require("../assets/images/navlogo.svg")
 
   return (
     <>
-    <Bar>
-      <p>+49 30 209164630</p>
-      <p>info@widewayengineers.com</p>
-    </Bar>
-    <Nav>
+    <nav>
+      <Bar>
+        <Info>+49 30 209164630</Info>
+        <Info>info@widewayengineers.com</Info>
+      </Bar>
+    <MainNav>
       <NavLink to="/">
-        <Logo src={logo2} alt="logo" />
+        <Logo src={navlogo} alt="logo" />
       </NavLink>
       <Bars onClick={props.toggle} />
       <NavMenu>
@@ -48,7 +48,8 @@ const Header = ( props) => {
           Make a deal
         </Button>
       </NavBtn>
-    </Nav>
+      </MainNav>
+      </nav>
     </>
   )
 }
@@ -56,15 +57,27 @@ const Header = ( props) => {
 export default Header
 
 const Bar = styled.div `
-  display: flex;
   background: blue;
   color: #fff;
-  justify-content: space-around;
-  position: sticky;
+  height: 26px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.28rem calc((100vw - 1300px) / 2);
+  font-size: 0.85rem ;
+  z-index: 100;
+  overflow: hidden;
+  position: fixed;
 `
-const Nav = styled.nav`
+
+const Info = styled.p `
+  margin: 0 20px;
+`
+
+const MainNav = styled.nav`
   background: #212221;
-  height: 80px;
+  height: 62px;
+  top: 26px;
   display: flex;
   width: 100%;
   justify-content: space-between;
