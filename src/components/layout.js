@@ -23,7 +23,7 @@ const Layout = ({children}) => {
   return (
     <div className={dark? "dark-mode": "light-mode"}>
     <GlobalStyle />
-      <Header theme = {dark} setTheme={setMode} toggle={toggle}/>
+      <Header theme = {dark} initialTheme = {dark} setTheme={setMode} toggle={toggle}/>
       
       <Sidebar isOpen={isOpen} toggle={toggle}/>
         <main>{children}</main>

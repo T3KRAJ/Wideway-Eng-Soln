@@ -15,9 +15,9 @@ const About = () => {
         className="md:h-screen items-center  md:flex max-w-md mx-auto rounded-xl shadow-2xl overflow-hidden mt-48 mb-24 max-w-screen-xl mx-auto md:max-w-screen-xl bg-gray"
       >
         <img
-          className="h-50  md:h-auto lg:h-auto w-full md:w-1/3  lg:w-1/3  flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden p-4"
+          className="h-50 mt-20 md:h-auto lg:h-auto w-full md:w-1/3  lg:w-1/3  flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden p-4"
           src={logo}
-          style={{ backgroundImage: "url('../assets/images/logo.svg')" }}
+          // style={{ backgroundImage: "url('../assets/images/logo.svg')" }}
           title="Site's logo"
           alt="logo"
           data-aos="flip-left"
