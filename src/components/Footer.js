@@ -67,6 +67,7 @@ const FooterLinksWrapper = styled.div`
   grid-template-columns: repeat(2, 1fr);
   @media screen and (max-width: 760px) {
     grid-template-columns: 1fr;
+    margin-left: 2.4rem;
   }
 `
 

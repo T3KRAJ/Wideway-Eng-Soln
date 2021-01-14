@@ -83,6 +83,7 @@ const ProductWrapper = styled.div`
         grid-template-columns: 1fr;
     }
 `
+
 const ProductCard = styled.div`
   line-height: 2;
   width: 100%;
@@ -103,6 +104,7 @@ const ProductImg = styled(Img)`
     filter: brightness(100%);
   }
 `
+
 const ProductInfo = styled.div`
   display: flex;
   flex-direction: column;

@@ -22,7 +22,6 @@ const Header = props => {
         }
       }
     })
-    console.log(scrollState)
     return () => {
       document.removeEventListener("scroll", listener)
     }
@@ -35,7 +34,6 @@ const Header = props => {
         <Bar>
           <Info>+49 30 209164630</Info>
           <Info>info@widewayengineers.com</Info>
-          <Info></Info>
         </Bar>
         <MainNav color={scrollState}>
           <NavLink to="/">
@@ -104,7 +102,7 @@ const Bar = styled.div`
 `
 
 const Info = styled.p`
-  margin: 0 0px;
+  margin: 0 20px;
 `
 
 const MainNav = styled.nav`
@@ -169,7 +167,7 @@ const Dark = styled.label`
   display: flex;
   align-items: center;
   margin-right: 24px;
-  @media screen and (max-width: 760px) {
+  ${'' /* @media screen and (max-width: 760px) {
     display: none;
-  }
+  } */}
 `

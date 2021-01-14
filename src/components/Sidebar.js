@@ -5,7 +5,7 @@ import {Link as LinkScroll} from 'react-scroll'
 import { Button } from "./Button";
 import {menuData} from '../data/MenuData' 
 
-function Sidebar({ isOpen, toggle }) {
+function Sidebar({ isOpen, toggle, theme, setTheme, initialTheme }) {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
@@ -13,7 +13,6 @@ function Sidebar({ isOpen, toggle }) {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu >
-
         {menuData.map(({link, title}, index) => (
           <SidebarLink to={link} key={index} onClick={toggle} activeClass="active"
             spy={true}
@@ -23,7 +22,24 @@ function Sidebar({ isOpen, toggle }) {
             {title}
           </SidebarLink>
         ))}
+                <Dark>
+                <label className="switch ml-10 -mr-14 ">
+                  <input
+                    type="checkbox"
+                    value={theme}
+                    onChange={() => {
+                      setTheme(!theme)
+                    }}
+                    checked={theme}
+                  />
+                  <span
+                    className={theme ? "slider round" : "slider1 round"}
+                  ></span>
+                </label>
+             
+            </Dark>
         </SidebarMenu>
+
         <SideBtnWrap>
         <Button primary="true" onClick={toggle} round="true" big="true" to="/trips">Make a deal</Button>
         </SideBtnWrap>
@@ -97,4 +113,14 @@ const SidebarMenu = styled.ul`
 const SideBtnWrap = styled.div`
     display: flex;
     justify-content: center;
+`
+
+const Dark = styled.label`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+  ${'' /* @media screen and (max-width: 760px) {
+    display: none;
+  } */}
 `

@@ -25,7 +25,7 @@ const Layout = ({children}) => {
     <GlobalStyle />
       <Header theme = {dark} initialTheme = {dark} setTheme={setMode} toggle={toggle}/>
       
-      <Sidebar isOpen={isOpen} toggle={toggle}/>
+      <Sidebar isOpen={isOpen} toggle={toggle} theme = {dark} initialTheme = {dark} setTheme={setMode}/>
         <main>{children}</main>
       <Footer />
     </div>
