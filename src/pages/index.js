@@ -10,10 +10,6 @@ import "./index.css"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <label className="switch">
-      <input type="checkbox" />
-      <span className="slider round"></span>
-    </label>
     <Hero />
     <About />
     <Services />

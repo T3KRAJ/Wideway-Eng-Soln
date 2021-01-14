@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div id="contact" className="md:h-screen md:flex max-w-md mx-auto rounded-xl shadow-2xl overflow-hidden max-w-screen-xl mx-auto md:max-w-screen-xl mt-16 ">
       <div className="p-8 md:max-w-2xl w-full md:w-1/2 lg:w-1/2 text-center sm:text-left mb-5 text-white-900 mt-1"  data-aos="fade-right">
-        <div data-aos="fade-down" className="uppercase tracking-wide text-sm text-black-900  text-xl text-black  font-black font-bold mb-5 text-center">
+        <div data-aos="fade-down" className="uppercase tracking-wide text-sm text-indigo-900  text-xl text-black  font-black font-bold mb-5 text-center">
           Our Office
         </div>
 
@@ -26,52 +26,52 @@ const Contact = () => {
       </div>
 
       <div className="md:flex-shrink-0 w-full md:w-1/2 lg:w-1/2 mt-9" data-aos="fade-left">
-        <div data-aos="fade-down" className="uppercase tracking-wide text-sm text-sm   text-xl text-indigo-500 font-extrabold text-center">
+        <div data-aos="fade-down" className="uppercase tracking-wide text-xl text-indigo-900  font-extrabold text-center">
           Send us a message
         </div>
-        <form action="#" className="shadow-sm rounded-md md:max-w-4xl p-8">
+        <form action="#" className="shadow-sm rounded-md md:max-w-4xl p-8 text-black-900 font-extrabold">
           <div className="mb-6">
-            <label htmlFor="name" className="mb-3 block text-gray-900">
+            <label htmlFor="name" className="mb-3 block">
               Full name:
             </label>
             <input
               type="text"
               id="name"
-              className="bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full md:max-w-4xl"
+              className="bg-white rounded-md border border-gray-900 p-3 focus:outline-none w-full md:max-w-4xl"
               placeholder="John Doe"
               required
             />
           </div>
           <div className="mb-6">
-            <label htmlFor="email" className="mb-3 block text-gray-700">
+            <label htmlFor="email" className="mb-3 block">
               Email address:
             </label>
             <input
               type="email"
               id="email"
-              className="bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full"
+              className="bg-white rounded-md border border-gray-900 p-3 focus:outline-none w-full"
               placeholder="john.doe@company.com"
               required
             />
           </div>
           <div className="mb-8">
-            <label htmlFor="name" className="mb-3 block text-gray-700">
+            <label htmlFor="name" className=" mb-3 block">
               Phone:
             </label>
             <input
               type="number"
-              id="contact"
-              className="bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full"
+              id="contacts"
+              className="bg-white rounded-md border border-gray-900 p-3 focus:outline-none w-full"
               placeholder="+91 7845215178"
               required
             />
           </div>
           <div className="mb-8">
-            <label htmlFor="name" className="mb-3 block text-gray-700">
+            <label htmlFor="name" className="mb-3 block">
               Message:
             </label>
             <textarea
-              className="resize-none border rounded-md bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full"
+              className="resize-none border rounded-md bg-white rounded-md border border-gray-900 p-3 focus:outline-none w-full"
               placeholder="Your message..."
               required
             ></textarea>

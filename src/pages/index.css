@@ -2,7 +2,7 @@
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
+    width: 65px;
     height: 34px;
   }
   
@@ -21,25 +21,32 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    
+    background-color: #a57e7e;
+
+    background-size:cover;
     -webkit-transition: .4s;
     transition: .4s;
+  
   }
   
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
+    height: 25px;
     width: 26px;
     left: 4px;
-    bottom: 4px;
-    background-color: white;
+    bottom: 5px;
+    /* background-color: #615a5a; */
+    background-image: url('../assets/images/moon.png');
+    background-size:cover;
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .slider {
-    background-color: #112211;
+    background-color: #272927;
+    box-shadow: 2px 2px 10px rgb(235, 113, 113);
   }
   
   input:focus + .slider {
@@ -60,6 +67,63 @@
   .slider.round:before {
     border-radius: 50%;
   }
+
+
+  .slider1 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    background-color: #a09999;
+   
+    background-size:cover;
+    -webkit-transition: .4s;
+    transition: .4s;
+  
+  }
+  
+  .slider1:before {
+    position: absolute;
+    content: "";
+    height: 28px;
+    width: 26px;
+    left: 4px;
+    bottom: 5px;
+    /* background-color: #615a5a; */
+    background-image: url('../assets/images/sunny.png');
+    background-size:cover;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider1 {
+    background-color: #808180;
+    box-shadow: 2px 2px 10px rgb(235, 113, 113);
+  }
+  
+  input:focus + .slider1 {
+    box-shadow: 0 0 1px #112211;
+  }
+  
+  input:checked + .slider1:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded slider1s */
+  .slider1.round {
+    border-radius: 34px;
+  }
+  
+  .slider1.round:before {
+    border-radius: 50%;
+  }
+
+
 
   .dark-mode{
       background-color: #212221;
