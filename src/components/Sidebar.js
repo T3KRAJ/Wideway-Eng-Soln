@@ -15,7 +15,7 @@ function Sidebar({ isOpen, toggle }) {
         <SidebarMenu >
 
         {menuData.map(({link, title}, index) => (
-          <SidebarLink to={link} key={index} activeClass="active"
+          <SidebarLink to={link} key={index} onClick={toggle} activeClass="active"
             spy={true}
             smooth={true}
             offset={-70}
@@ -25,7 +25,7 @@ function Sidebar({ isOpen, toggle }) {
         ))}
         </SidebarMenu>
         <SideBtnWrap>
-        <Button primary="true" round="true" big="true" to="/trips">Make a deal</Button>
+        <Button primary="true" onClick={toggle} round="true" big="true" to="/trips">Make a deal</Button>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

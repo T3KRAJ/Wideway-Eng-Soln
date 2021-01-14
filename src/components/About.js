@@ -12,12 +12,11 @@ const About = () => {
   
       <div
         id = "about"
-        className="md:h-screen items-center  md:flex max-w-md mx-auto rounded-xl shadow-2xl overflow-hidden mt-48 mb-24 max-w-screen-xl mx-auto md:max-w-screen-xl bg-gray"
+        className="md:h-screen items-center md:flex max-w-md overflow-hidden p-8 md:container md:mx-auto bg-gray"
       >
         <img
           className="h-50 mt-20 md:h-auto lg:h-auto w-full md:w-1/3  lg:w-1/3  flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden p-4"
           src={logo}
-          // style={{ backgroundImage: "url('../assets/images/logo.svg')" }}
           title="Site's logo"
           alt="logo"
           data-aos="flip-left"
@@ -27,13 +26,13 @@ const About = () => {
           data-aos="fade-left"
           className="rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
         >
-          <div className="mb-10 mt-4">
+          <div>
             <div className="text-black mb-2 text-center">
-              <span className="uppercase tracking-wide text-black  text-4xl text-indigo-500 font-semibold mb-5 text-center">
+              <span className="uppercase tracking-wide text-black  text-4xl text-indigo-500 font-semibold mb-5 text-center" id="heading">
                 ABOUT US
               </span>
             </div>
-            <p className="text-lg font-semibold mt-7 p-4">
+            <p className="text-lg font-semibold mt-10">
               We are Wideway Engineering Solution, providing multiple IT
               Services in various fields. We work together to design, create,
               build, develop products that we are proud of, for the people who
@@ -46,11 +45,11 @@ const About = () => {
             </p>
           </div>
           <div className="flex items-center">
-            <div className="text-sm text-center mb-7">
+            <div className="text-sm text-center mt-10">
               <Button
                 round="true"
+                primary="true"
                 to="/contact"
-                className="button bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
               >
                 Contact us
               </Button>

@@ -19,11 +19,11 @@ const Services = () => {
     }
   })
   return (
-    <div className="md:h-screen max-w-screen-xl mx-auto px-4 max-w-md mx-auto rounded-xl shadow-2xl items-center text-center" id="services">
-        <h1 className="uppercase tracking-wide text-black text-4xl text-indigo-500 font-semibold text-center pt-12">
+    <div className="md:h-screen p-12 md:container md:mx-auto items-center text-center" id="services">
+        <h1 className="uppercase tracking-wide text-black text-4xl text-indigo-500 font-semibold text-center" id="heading">
           Our Services
         </h1>
-        <div className="-mx-4 flex flex-wrap my-28">
+        <div className="-mx-4 flex flex-wrap my-24">
           <ServiceCard src={innovative} service="Innovation" />
           <ServiceCard
             src={transportation}

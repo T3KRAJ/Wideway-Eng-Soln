@@ -52,7 +52,7 @@ const Gallery = () => {
   return (
     <ProductContainer>
       <div className="text-black mb-10 mt-10 text-center">
-              <span className="uppercase tracking-wide text-black  text-4xl text-indigo-500 font-semibold mb-5 text-center">
+              <span className="uppercase tracking-wide text-black  text-4xl text-indigo-500 font-semibold mb-5 text-center" id="heading">
                 Gallery
               </span>
             </div>

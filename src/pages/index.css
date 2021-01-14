@@ -134,6 +134,9 @@
       background-color: #525352;
       border:none;
   }
+  .dark-mode #heading{
+    color: rgb(238, 218, 218);
+}
   .dark-mode #about .button{
      border:none;
      box-shadow: 2px 3px 9px #f3c5c5;

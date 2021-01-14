@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "react-scroll"
 import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
@@ -6,6 +6,27 @@ import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
 
 const Header = props => {
+  let listener = null
+  const [scrollState, setScrollState] = useState("top")
+
+  useEffect(() => {
+    listener = document.addEventListener("scroll", e => {
+      var scrolled = document.scrollingElement.scrollTop
+      if (scrolled >= 120) {
+        if (scrollState !== "scrolled") {
+          setScrollState("scrolled")
+        }
+      } else {
+        if (scrollState !== "top") {
+          setScrollState("top")
+        }
+      }
+    })
+    console.log(scrollState)
+    return () => {
+      document.removeEventListener("scroll", listener)
+    }
+  }, [scrollState])
   const navlogo = require("../assets/images/navlogo.svg")
 
   return (
@@ -16,13 +37,13 @@ const Header = props => {
           <Info>info@widewayengineers.com</Info>
           <Info></Info>
         </Bar>
-        <MainNav>
+        <MainNav color={scrollState}>
           <NavLink to="/">
             <Logo src={navlogo} alt="logo" />
           </NavLink>
 
           <Bars onClick={props.toggle} />
-          <NavMenu>
+          <NavMenu >
             {menuData.map(({ link, title }, index) => (
               <NavLink
                 to={link}
@@ -87,7 +108,7 @@ const Info = styled.p`
 `
 
 const MainNav = styled.nav`
-  background: #212221;
+  background: ${({color}) => (color==="top" ? 'transparent' : '#212221')};
   height: 62px;
   top: 26px;
   display: flex;

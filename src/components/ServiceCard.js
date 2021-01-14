@@ -8,11 +8,11 @@ const ServiceCard = props => {
 
   return (
     <div
-      className="w-full flex flex-col p-4 sm:w-full lg:w-1/3 "
+      className="w-full flex flex-col p-4 sm:w-full lg:w-1/3"
       data-aos="zoom-in-up"
       
     >
-      <div id = "services" className="  hover:bg-purple-100 flex-1 px-10 py-12  rounded-lg shadow-lg text-center items-center hover:mt-48">
+      <div id = "services" className="hover:bg-purple-200 flex-1 px-10 py-12 rounded-lg shadow-lg text-center items-center hover:mt-48">
         <img
           src={props.src}
           alt="logo"
