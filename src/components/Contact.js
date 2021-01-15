@@ -37,7 +37,7 @@ const Contact = () => {
             <input
               type="text"
               id="name"
-              className="bg-white rounded-md border border-gray-900 p-3 focus:outline-none w-full md:max-w-4xl"
+              className=" bg-white rounded-md border border-gray-900 p-3 focus:outline-none w-full md:max-w-4xl"
               placeholder="John Doe"
               required
             />
