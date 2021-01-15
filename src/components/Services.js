@@ -5,7 +5,8 @@ import factory from "../assets/images/factory.svg"
 import ServiceCard from "./ServiceCard"
 import AOS from "aos"
 
-const Services = () => {
+
+const Services = (props) => {
   useEffect(() => {
     const AOS = require("aos")
     AOS.init({
@@ -19,6 +20,7 @@ const Services = () => {
     }
   })
   return (
+ 
     <div className="md:h-screen p-12 md:container md:mx-auto items-center text-center" id="services">
         <h1 className="uppercase tracking-wide text-black text-4xl text-indigo-500 font-semibold text-center" id="heading">
           Our Services
@@ -38,6 +40,7 @@ const Services = () => {
           />
         </div>
     </div>
+    
   )
 }
 export default Services

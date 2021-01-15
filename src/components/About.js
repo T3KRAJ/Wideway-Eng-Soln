@@ -9,18 +9,22 @@ const About = () => {
     AOS.init({ delay: 200, duration: 1200, once: false })
   })
   return ( 
-  
+ 
       <div
         id = "about"
-        className="md:h-screen items-center md:flex max-w-md overflow-hidden p-8 md:container md:mx-auto bg-gray"
+        className="md:h-screen items-center md:flex max-w-md overflow-hidden p-8 md:container md:mx-auto"
       >
-        <img
-          className="h-50 mt-20 md:h-auto lg:h-auto w-full md:w-1/3  lg:w-1/3  flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden p-4"
+     <div style={{transformStyle: "preserve-3d", transform: "perspective(960px)"}} className="animate-none h-50 mt-20 md:h-auto lg:h-auto w-full md:w-1/3  lg:w-1/3  flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden p-4">
+       <img
+          className="h-50 md:h-auto lg:h-auto w-full md:w-full lg:w-full  flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden p-4"
           src={logo}
           title="Site's logo"
           alt="logo"
           data-aos="flip-left"
         />
+     </div>
+        
+      
         <div
          
           data-aos="fade-left"
@@ -57,6 +61,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      
   )
 }
 export default About

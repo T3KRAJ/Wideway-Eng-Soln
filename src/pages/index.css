@@ -145,6 +145,11 @@
     color: rgb(238, 218, 218);
     background-color: #525352;
 }
+.dark-mode #services .cards{
+  font-weight: 900;
+  box-shadow: 2px 2px 9px #ffff;
+}
+
 .dark-mode #contact{
     color: rgb(238, 218, 218);
     background-color: #525352;
@@ -152,7 +157,7 @@
 
 .light-mode{
     color:  #111111;
-    background-color:#ffff
+    background-color:#f3f7f8
 }
 .light-mode #about{
     color:  #0f0e0e;
@@ -162,6 +167,16 @@
 .light-mode #services{
     color:  #111111;
     background-color:#ffff
+}
+.light-mode #services .cards{
+  background: #858ce74f;
+  font-weight: 900;
+  box-shadow: 5px 5px 10px #636262;
+}
+.light-mode #services .cards:hover{
+  transform-style: preserve-3d;
+  background:linear-gradient(135deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 60%);
+  
 }
 .light-mode #contact{
     color:  #111111;
