@@ -36,7 +36,7 @@ const About = () => {
                 ABOUT US
               </span>
             </div>
-            <p className="text-lg font-semibold mt-10">
+            <p className="mt-10">
               We are Wideway Engineering Solution, providing multiple IT
               Services in various fields. We work together to design, create,
               build, develop products that we are proud of, for the people who

@@ -35,7 +35,7 @@ const Header = props => {
           <Info>+49 30 209164630</Info>
           <Info>info@widewayengineers.com</Info>
         </Bar>
-        <MainNav color={scrollState}>
+        <MainNav postn={scrollState}>
           <NavLink to="/">
             <Logo src={navlogo} alt="logo" />
           </NavLink>
@@ -88,7 +88,7 @@ const Header = props => {
 export default Header
 
 const Bar = styled.div`
-  background: blue;
+  background: #104C91;
   color: #fff;
   height: 26px;
   display: flex;
@@ -106,8 +106,8 @@ const Info = styled.p`
 `
 
 const MainNav = styled.nav`
-  background: ${({color}) => (color==="top" ? 'transparent' : '#212221')};
-  height: 62px;
+  background: ${({postn}) => (postn==="top" ? 'transparent' : '#212221')};
+  height: ${({postn}) => (postn==="top" ? '75px' : '62px')};
   top: 26px;
   display: flex;
   width: 100%;
