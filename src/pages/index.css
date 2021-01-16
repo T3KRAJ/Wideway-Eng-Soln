@@ -182,3 +182,12 @@
     color:  #111111;
     background-color:#ffff
 }
+#services .parallax-inner{
+
+  background-repeat: no-repeat;
+  /* justify-content: center;
+  align-items: center;
+  text-align: center; */
+ 
+  background-position: center;
+}

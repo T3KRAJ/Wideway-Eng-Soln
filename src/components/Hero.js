@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { Button } from './Button'
 import HeroImg from '../assets/images/hero.jpg'
 import "aos/dist/aos.css"
+
 function Hero() {
     useEffect(() => {
         AOS.init({
@@ -17,6 +18,7 @@ function Hero() {
         <HeroContainer>
             <HeroBg>
                 <HeroPic src={HeroImg} alt="hero"/>
+              
             </HeroBg>
             <HeroContent>
                 <HeroItems>
