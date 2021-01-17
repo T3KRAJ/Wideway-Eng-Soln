@@ -126,13 +126,15 @@
 
 
   .dark-mode{
-      background-color: #303046;
+      background-color: #20213f;
       color: #fff;
   }
   .dark-mode #about{
       color: rgb(238, 218, 218);
-      background-color: #303046;
+      background-color: transparent;
       border:none;
+      border-radius:20px ;
+      box-shadow: 2px 2px 9px #a1a0a0;
   }
   .dark-mode #heading{
     color: rgb(238, 218, 218);
@@ -143,30 +145,34 @@
 }
 .dark-mode #services{
     color: rgb(238, 218, 218);
-    background-color: #20203F;
+    background-color:transparent;
+    margin-top: 6px;
+    border-radius:20px ;
+    box-shadow: 2px 2px 9px #a1a0a0;
 }
 .dark-mode #services .cards{
   font-weight: 900;
-  box-shadow: 2px 2px 9px rgb(46, 45, 45);
+  box-shadow: 2px 2px 9px #a1a0a0;
 }
 
 .dark-mode #contact{
-    color: rgb(238, 218, 218);
-    background-color: #20202e;
+    color: rgb(238, 218, 218); 
+    background-color: transparent;
+    box-shadow: 2px 2px 9px #a1a0a0;
 }
 
 .light-mode{
     color:  #212221;
-    background-color:rgb(217, 230, 223);
+    background-color:rgb(255, 255, 255);
 }
 .light-mode #about{
     color:  #212221;
     font-weight: 500;
-    background-color:rgb(217, 230, 223);
+    background-color:#d2f0e12d;
 }
 .light-mode #services{
     color:  #212221;
-    background-color:rgb(217, 230, 223);
+    background-color:#d2f0e12d;
 }
 .light-mode #services .cards{
   background: #858ce74f;
@@ -180,14 +186,9 @@
 }
 .light-mode #contact{
     color:  #111111;
-    background-color:#ffff
+    background-color:#d2f0e12d;
 }
 #services .parallax-inner{
-
   background-repeat: no-repeat;
-  /* justify-content: center;
-  align-items: center;
-  text-align: center; */
- 
   background-position: center;
 }

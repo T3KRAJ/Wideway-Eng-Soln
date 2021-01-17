@@ -21,7 +21,7 @@ const Services = (props) => {
   })
   return (
  
-    <div className="md:h-screen p-12 md:container md:mx-auto items-center text-center" id="services">
+    <div className="md:h-screen p-12 md:container md:mx-auto items-center text-center shadow-xl " id="services">
         <h1 className="uppercase tracking-wide text-black text-4xl text-indigo-500 font-semibold text-center" id="heading">
           Our Services
         </h1>
