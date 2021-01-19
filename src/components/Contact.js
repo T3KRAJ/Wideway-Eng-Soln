@@ -7,9 +7,9 @@ const Contact = () => {
     AOS.init({delay:200,duration:1200,once:false});
   })
   return (
-    <div id="contact" className="md:h-screen md:flex max-w-md mx-auto rounded-xl shadow-2xl overflow-hidden max-w-screen-xl p-4 mx-auto md:max-w-screen-xl mt-16 mb-16">
+    <div id="contact" className=" md:h-screen md:flex max-w-md mx-auto rounded-xl shadow-xl overflow-hidden max-w-screen-xl p-4 mx-auto md:max-w-screen-xl mt-16 mb-16">
       <div id="heading" className="p-8 md:max-w-2xl w-full md:w-1/2 lg:w-1/2 text-center sm:text-left mb-5 text-white-900 mt-1"  data-aos="fade-right">
-        <div data-aos="fade-down" className="uppercase tracking-wide text-sm text-indigo-900  text-xl text-black  font-black font-bold mb-5 text-center">
+        <div data-aos="fade-down" className="uppercase tracking-wide text-sm   text-xl  font-black font-bold mb-5 text-center">
           Our Office
         </div>
 
@@ -28,7 +28,7 @@ const Contact = () => {
       </div>
 
       <div className="md:flex-shrink-0 w-full md:w-1/2 lg:w-1/2 mt-9" data-aos="fade-left">
-        <div data-aos="fade-down" className="uppercase tracking-wide text-xl text-indigo-900  font-extrabold text-center">
+        <div data-aos="fade-down" className="uppercase tracking-wide text-xl   font-extrabold text-center">
           Send us a message
         </div>
         <form action="#" className="shadow-sm rounded-md md:max-w-4xl p-8 text-black-900 font-extrabold">

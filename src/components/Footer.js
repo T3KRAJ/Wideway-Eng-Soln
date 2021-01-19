@@ -46,7 +46,7 @@ export default Footer
 const FooterContainer = styled.div`
   display: grid;
   color: #fff;
-  background: #212221;
+  background: #20213f;
   padding: 5rem calc((100vw - 1100px) / 2);
   grid-template-columns: repeat(2, 1fr);
 `

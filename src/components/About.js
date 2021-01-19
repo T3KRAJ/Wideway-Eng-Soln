@@ -12,7 +12,7 @@ const About = () => {
  
       <div
         id = "about"
-        className="md:h-screen items-center md:flex max-w-md overflow-hidden p-8 md:container md:mx-auto"
+        className="md:h-screen items-center md:flex max-w-md overflow-hidden p-8 md:container md:mx-auto shadow-xl "
       >
      <div style={{transformStyle: "preserve-3d", transform: "perspective(960px)"}} className="animate-none h-50 mt-20 md:h-auto lg:h-auto w-full md:w-1/3  lg:w-1/3  flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden p-4">
        <img

@@ -3,7 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Sidebar from './Sidebar'
 import { GlobalStyle } from './styles/GlobalStyle'
-
+import {ShareContext, ShareContextProvider} from "./ShareContextProvider"
 const Layout = ({children}) => {
   const [isOpen, setIsOpen] = useState(false)
   const getMode = () =>{
@@ -21,6 +21,7 @@ const Layout = ({children}) => {
 
 
   return (
+    <ShareContextProvider theme={dark}>
     <div className={dark? "dark-mode": "light-mode"}>
     <GlobalStyle />
       <Header theme = {dark} initialTheme = {dark} setTheme={setMode} toggle={toggle}/>
@@ -29,6 +30,7 @@ const Layout = ({children}) => {
         <main>{children}</main>
       <Footer />
     </div>
+    </ShareContextProvider>
   )
 }
 
