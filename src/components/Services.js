@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import innovative from "../assets/images/innovation.svg"
 import transportation from "../assets/images/transportation.svg"
-import factory from "../assets/images/factory.svg"
+import factories from "../assets/images/factory1.svg"
 import ServiceCard from "./ServiceCard"
 import AOS from "aos"
 
@@ -21,7 +21,7 @@ const Services = (props) => {
   })
   return (
  
-    <div className="md:h-screen p-12 md:container md:mx-auto items-center text-center" id="services">
+    <div className="md:h-screen p-12 md:container md:mx-auto items-center text-center shadow-xl " id="services">
         <h1 className="uppercase tracking-wide text-black text-4xl text-indigo-500 font-semibold text-center" id="heading">
           Our Services
         </h1>
@@ -31,9 +31,9 @@ const Services = (props) => {
             src={transportation}
             service="Hospitality and Transportation"
           />
-          <ServiceCard src={factory} service="Manufacturing " />
-          <ServiceCard src={factory} service=" Manufacturing " />
-          <ServiceCard src={innovative} service="Innovation" />
+          <ServiceCard src={factories} service="Manufacturing " />
+          <ServiceCard src={transportation} service=" Manufacturing " />
+          <ServiceCard src={factories} service="Innovation" />
           <ServiceCard
             src={transportation}
             service=" Hospitality and Transportation"
