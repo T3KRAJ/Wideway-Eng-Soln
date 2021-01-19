@@ -160,6 +160,16 @@
     background-color: transparent;
     box-shadow: 2px 2px 9px #a1a0a0;
 }
+.dark-mode  #heroH1{
+  color: #ffffff;
+}
+.dark-mode  #heroP{
+  color: #fffdfd;
+}
+.dark-mode #navLink:hover{
+  text-shadow: 11px -11px 3px #686767;
+  font-size: 17px;
+}
 
 .light-mode{
     color:  #212221;
@@ -191,4 +201,23 @@
 #services .parallax-inner{
   background-repeat: no-repeat;
   background-position: center;
+}
+.light-mode #heroH1{
+  color: #111111;
+  font-size: 2.7rem;
+  font-weight: bolder;
+}
+.light-mode #heroP{
+  color: #111111;
+}
+.light-mode #navLink{
+  color: #cfcfcf;
+  font-weight: 900;
+}
+ .light-mode #navLink:hover{
+  text-shadow: 11px -11px 3px #686767;
+  font-size: 17px;
+}
+.light-mode #mainNav{
+  color: #20213f8c;
 }
