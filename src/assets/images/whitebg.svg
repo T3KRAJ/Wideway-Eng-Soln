@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="7568" height="4602" fill="none" viewBox="0 0 32768 17252">
+<svg xmlns="http://www.w3.org/2000/svg" width="7568" height="5602" fill="none" viewBox="0 0 32768 17252">
   <g clip-path="url(#clip0)">
     <path fill="#fff" d="M0 0h32767.97v17251.594H0z"/>
-    <ellipse cx="25661.1" cy="10825.9" fill="#104C92" rx="10797.4" ry="8481.79" transform="rotate(2.473 25661.1 10825.9)"/>
+    <ellipse cx="25661.1" cy="15825.9" fill="#104C92" rx="10797.4" ry="8481.79" transform="rotate(2.473 25661.1 10825.9)"/>
   </g>
   <defs>
     <clipPath id="clip0">

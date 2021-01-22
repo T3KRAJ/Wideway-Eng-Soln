@@ -35,7 +35,7 @@ const Header = props => {
           <Info>+49 30 209164630</Info>
           <Info>info@widewayengineers.com</Info>
         </Bar>
-        <MainNav postn={scrollState} id="mainNav">
+        <MainNav postn={scrollState} id="mainNav" theme={props.theme}>
           <NavLink to="/">
             <Logo src={navlogo} alt="logo" />
           </NavLink>
@@ -44,6 +44,8 @@ const Header = props => {
           <NavMenu >
             {menuData.map(({ link, title }, index) => (
               <NavLink
+               postn={scrollState}
+               theme={props.theme}
                id="navLink"
                 to={link}
                 activeClass="active"
@@ -107,7 +109,7 @@ const Info = styled.p`
 `
 
 const MainNav = styled.nav`
-  background: ${({postn}) => (postn==="top" ? 'transparent' : '#121212ea')};
+  background: ${({postn, theme}) => (theme)? (postn==="top" ? 'transparent' : '#121212ea'): (postn==="top" ? 'transparent' : '#121212ea')};
   height: ${({postn}) => (postn==="top" ? '75px' : '62px')};
   top: 26px;
   display: flex;
@@ -120,7 +122,7 @@ const MainNav = styled.nav`
 `
 
 const NavLink = styled(Link)`
-  color:  #cfcfcf;
+  color:${({postn, theme}) => (theme)? (postn==="top" ? 'black' : '#fff'): (postn==="top" ? '#fff' : '#fff')};
   font-weight: 900;
   display: flex;
   align-items: center;
