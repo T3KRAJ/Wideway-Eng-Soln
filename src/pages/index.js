@@ -1,7 +1,7 @@
 import React from "react"
 import About from "../components/About"
 import Contact from "../components/Contact"
-// import Gallery from "../components/Gallery"
+import Gallery from "../components/Gallery"
 import Hero from "../components/Hero"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"

@@ -210,14 +210,7 @@
 .light-mode #heroP{
   color: #111111;
 }
-.light-mode #navLink{
-  color: #cfcfcf;
-  font-weight: 900;
-}
- .light-mode #navLink:hover{
-  text-shadow: 11px -11px 3px #686767;
-  font-size: 17px;
-}
-.light-mode #mainNav{
-  color: #20213f8c;
-}
+/* .light-mode #navLink{
+  color: #000;
+} */
+

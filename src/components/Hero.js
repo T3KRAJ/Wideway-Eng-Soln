@@ -4,7 +4,6 @@ import styled from "styled-components"
 import { Button } from "./Button"
 import HeroImg from "../assets/images/heroimg.svg"
 import BgImg from "../assets/images/hero.png"
-import BgImg1 from "../assets/images/whitebg.svg"
 import "aos/dist/aos.css"
 import {ShareContext} from "./ShareContextProvider"
 
@@ -19,12 +18,11 @@ function Hero() {
   
   const {collapsedShare } = useContext(ShareContext);
 
- 
-
   return (
     <HeroContainer>
       <HeroBg>
-       {collapsedShare ? <Bg src={BgImg} alt="bg" />: <Bg src={BgImg1} alt="bg" />} 
+      <Bg src={BgImg} alt="bg" />
+       {/* {collapsedShare ? <Bg src={BgImg} alt="bg" />: <Bg src={BgImg1} alt="bg" />}  */}
       </HeroBg>
       <HeroContent>
         <HeroItems>
@@ -34,10 +32,6 @@ function Hero() {
             Delivering exponential value to engineering enterprises by
             collaborating with them across three key tenets
           </HeroP>
-          
-       
-         
-          
           <ButtonWrap>
             <Button
               primary="true"
@@ -62,7 +56,7 @@ function Hero() {
 export default Hero
 
 const HeroContainer = styled.div`
-  background: #00c;
+  background: #000;
   height: 100vh;
   padding: 0;
   margin: 0;

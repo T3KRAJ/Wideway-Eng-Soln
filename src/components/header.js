@@ -107,7 +107,7 @@ const Info = styled.p`
 `
 
 const MainNav = styled.nav`
-  background: ${({postn}) => (postn==="top" ? '#20213f' : '#121212ea')};
+  background: ${({postn}) => (postn==="top" ? 'transparent' : '#121212ea')};
   height: ${({postn}) => (postn==="top" ? '75px' : '62px')};
   top: 26px;
   display: flex;
