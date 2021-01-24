@@ -122,7 +122,7 @@ const MainNav = styled.nav`
 `
 
 const NavLink = styled(Link)`
-  color:${({postn, theme}) => (theme)? (postn==="top" ? 'black' : '#fff'): (postn==="top" ? '#fff' : '#fff')};
+  color:${({postn, theme}) => (theme)? (postn==="top" ? '#104c92' : '#fff'): (postn==="top" ? '#fff' : '#fff')};
   font-weight: 900;
   display: flex;
   align-items: center;

@@ -17,12 +17,11 @@ function Hero() {
   }, [])
   
   const {collapsedShare } = useContext(ShareContext);
-
+  const mode = collapsedShare ? "#20213f":"#fff"
   return (
     <HeroContainer>
-      <HeroBg>
+      <HeroBg style={{background:`${mode}`}} >
       <Bg src={BgImg} alt="bg" />
-       {/* {collapsedShare ? <Bg src={BgImg} alt="bg" />: <Bg src={BgImg1} alt="bg" />}  */}
       </HeroBg>
       <HeroContent>
         <HeroItems>
