@@ -15,7 +15,7 @@ const ServiceCard = props => {
       >
         <div
           id="services"
-          className="parallax-background cards hover:bg-purple-200 flex-1 px-10 py-12 rounded-lg shadow-lg text-center items-center hover:mt-48"
+          className="parallax-background cards hover:bg-purple-200 flex-1 px-10 py-12 rounded-lg  text-center items-center hover:mt-48"
         >
           <div
             id="parallax-demo"
