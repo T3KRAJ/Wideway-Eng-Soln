@@ -3,7 +3,9 @@ import Header from './Header'
 import Footer from './Footer'
 import Sidebar from './Sidebar'
 import { GlobalStyle } from './styles/GlobalStyle'
+
 import {ShareContext, ShareContextProvider} from "./ShareContextProvider"
+
 
 const Layout = ({children}) => {
   const [isOpen, setIsOpen] = useState(false)

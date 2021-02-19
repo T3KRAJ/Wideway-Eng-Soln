@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import { Link } from "react-scroll"
 import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
@@ -6,11 +6,11 @@ import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
 
 const Header = props => {
-  let listener = null
+  const listener = useRef(null);
   const [scrollState, setScrollState] = useState("top")
 
   useEffect(() => {
-    listener = document.addEventListener("scroll", e => {
+    listener.current = document.addEventListener("scroll", e => {
       var scrolled = document.scrollingElement.scrollTop
       if (scrolled >= 120) {
         if (scrollState !== "scrolled") {
@@ -30,12 +30,12 @@ const Header = props => {
 
   return (
     <>
-      <nav>
+      <nav ref={listener}>
         <Bar>
           <Info>+49 30 209164630</Info>
           <Info>info@widewayengineers.com</Info>
         </Bar>
-        <MainNav postn={scrollState} id="mainNav" theme={props.theme}>
+        <MainNav postn={scrollState} id="mainNav" theme={props.theme.toString()}>
           <NavLink to="/">
             <Logo src={navlogo} alt="logo" />
           </NavLink>
@@ -45,7 +45,7 @@ const Header = props => {
             {menuData.map(({ link, title }, index) => (
               <NavLink
                postn={scrollState}
-               theme={props.theme}
+               theme={props.theme.toString()}
                id="navLink"
                 to={link}
                 activeClass="active"
