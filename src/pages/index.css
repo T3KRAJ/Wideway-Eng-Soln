@@ -155,7 +155,8 @@ input:checked + .slider1:before {
 }
 .dark-mode #services .cards{
 font-weight: 900;
-box-shadow: 2px 2px 9px #a1a0a0;
+box-shadow: 1px 1px 2px #5a5a5a;
+border: 1px solid #a1a0a0;
 }
 
 .dark-mode #contact{
