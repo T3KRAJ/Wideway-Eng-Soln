@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const Footer = () => {
   return (
-    <FooterContainer>
+    <FooterContainer className="footer">
       <FooterLinksWrapper>
         <FooterDesc>
           <h1>Wideway Engineering solutions</h1>
