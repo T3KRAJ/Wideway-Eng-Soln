@@ -14,15 +14,13 @@ const Contact = () => {
         </div>
 
         <Loc className="items-stretch md:items-center text-left tracking-wider font-bold">
-          Wipro Limited
+         Wideway Engineering Solutions
           <br />
-          Doddakannelli, Sarjapur Road
+        Deharadun, Uttrakhand,India
           <br />
-          Bengaluru - 560 035, India
+          Ph: +91 9760117913
           <br />
-          Ph: +91 (80) 46827999, +91 (80) 61427999, +91 (80) 46726000
-          <br />
-          Fax: +91 (80) 28440054
+          Email: sales@widewaysolutions.com
           <br />
         </Loc>
       </div>
