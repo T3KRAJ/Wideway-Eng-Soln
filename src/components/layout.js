@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react'
-import Header from './Header'
+import Header from './header'
 import Footer from './Footer'
 import Sidebar from './Sidebar'
 import { GlobalStyle } from './styles/GlobalStyle'
