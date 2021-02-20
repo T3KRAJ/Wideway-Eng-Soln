@@ -35,7 +35,7 @@ const Header = props => {
           <Info>+49 30 209164630</Info>
           <Info>info@widewayengineers.com</Info>
         </Bar>
-        <MainNav postn={scrollState} id="mainNav" theme={props.theme.toString()}>
+        <MainNav postn={scrollState} id="mainNav" theme={props.theme !== null ? props.theme.toString(): null}>
           <NavLink to="/">
             <Logo src={navlogo} alt="logo" />
           </NavLink>
@@ -45,7 +45,7 @@ const Header = props => {
             {menuData.map(({ link, title }, index) => (
               <NavLink
                postn={scrollState}
-               theme={props.theme.toString()}
+               theme={props.theme !== null ? props.theme.toString(): null}
                id="navLink"
                 to={link}
                 activeClass="active"
