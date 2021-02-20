@@ -7,7 +7,6 @@ const ServiceCard = props => {
     AOS.init({ delay: 200, duration: 1200, once: false })
   })
   const [state, setState] = useState("none")
-  const logo = props.src
   return (
     <>
       <div
@@ -17,7 +16,7 @@ const ServiceCard = props => {
         <div
           id="services"
           onMouseOver={() => {
-            setState("inline-block")
+            return setState("inline-block")
           }}
           onMouseLeave={() => {
             setState("none")
