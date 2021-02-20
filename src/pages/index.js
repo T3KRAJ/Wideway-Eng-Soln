@@ -3,7 +3,7 @@ import About from "../components/About"
 import Contact from "../components/Contact"
 import Hero from "../components/Hero"
 // import Gallery from '../components/Gallery'
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Services from "../components/Services"
 import "./index.css"
