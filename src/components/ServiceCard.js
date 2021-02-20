@@ -18,9 +18,12 @@ const ServiceCard = props => {
           onMouseOver={() => {
             return setState("inline-block")
           }}
+          onFocus={() => void 0}
           onMouseLeave={() => {
             setState("none")
           }}
+          role="button"
+          tabIndex="0"
           className="parallax-background cards hover:bg-purple-200 flex-1 px-10 py-12 rounded-lg  text-center items-center hover:mt-48"
         >
           <div
@@ -34,8 +37,11 @@ const ServiceCard = props => {
           {/* Description */}
           <div
             className=" rounded-2xl  absolute inset-0 justify-center items-center h-96 w-full -mt-28 transition duration-700 ease-in-out  transform hover:-translate-y-1 hover:scale-110"
-            style={{ display: `${state}`, background:"#a1a0a0", fontWeight:900 }}
-            
+            style={{
+              display: `${state}`,
+              background: "#a1a0a0",
+              fontWeight: 900,
+            }}
           >
             <div
               class="w-20 h-20 rounded-full mx-auto flex-none bg-cover rounded-t sm:rounded-2xl lg:rounded-t-none lg:rounded-l text-center "
@@ -50,17 +56,15 @@ const ServiceCard = props => {
                 <p class="text-gray-700 text-sm align-text-left font-serif">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-
+                  exercitationem praesentium nihil. Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Voluptatibus quia, nulla!
+                  Maiores et perferendis eaque, exercitationem praesentium
+                  nihil.
                 </p>
               </div>
-              
             </div>
           </div>
-            {/*End of Description */}
+          {/*End of Description */}
         </div>
       </div>
     </>
