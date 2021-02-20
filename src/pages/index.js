@@ -1,11 +1,11 @@
 import React from "react"
 import About from "../components/About"
-import Contact from "../components/Contact"
-import Gallery from "../components/Gallery"
-import Hero from "../components/Hero"
-import Layout from "../components/Layout"
-import SEO from "../components/seo"
-import Services from "../components/Services"
+import Contact from "../../src/components/Contact"
+import Hero from "../../src/components/Hero"
+import Gallery from '../../src/components/Gallery'
+import Layout from "../../src/components/Layout"
+import SEO from "../../src/components/seo"
+import Services from "../../src/components/Services"
 import "./index.css"
 const IndexPage = () => (
   <Layout>
