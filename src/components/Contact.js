@@ -29,22 +29,25 @@ const Contact = () => {
         <div data-aos="fade-down" className="uppercase tracking-wide text-xl   font-extrabold text-center">
           Send us a message
         </div>
-        <form name="Contact" method="POST" className="shadow-sm rounded-md md:max-w-4xl p-8 text-black-900 font-extrabold" data-netlify="true">
+        <form target="_blank" action="https://formsubmit.co/sales@widewaysolutions.com" method="POST" className="shadow-sm rounded-md md:max-w-4xl p-8 text-black-900 font-extrabold">
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_subject" value="New submission!" />
           <div className="mb-6">
-            <label htmlFor="name" name="Full Name" className="mb-3 block">
+          
+            <label htmlFor="name" className="mb-3 block">
               Full name:
             </label>
             <input
               type="text"
               id="name"
-              name="Fullname"
+              name="Full Name"
               className=" bg-white rounded-md border border-gray-900 p-3 focus:outline-none w-full md:max-w-4xl"
               placeholder="John Doe"
               required
             />
           </div>
           <div className="mb-6">
-            <label htmlFor="email" name="Email Address" className="mb-3 block">
+            <label htmlFor="email" className="mb-3 block">
               Email address:
             </label>
             <input
@@ -57,7 +60,7 @@ const Contact = () => {
             />
           </div>
           <div className="mb-8">
-            <label htmlFor="name" name="Phone Number" className=" mb-3 block">
+            <label htmlFor="name" className=" mb-3 block">
               Phone:
             </label>
             <input
@@ -70,11 +73,11 @@ const Contact = () => {
             />
           </div>
           <div className="mb-8">
-            <label htmlFor="name" name="Message" className="mb-3 block">
+            <label htmlFor="name" className="mb-3 block">
               Message:
             </label>
             <textarea
-              name="Message"
+            name="Message"
               className="resize-none border rounded-md bg-white rounded-md border border-gray-900 p-3 focus:outline-none w-full"
               placeholder="Your message..."
               required
