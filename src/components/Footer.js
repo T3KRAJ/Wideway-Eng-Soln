@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons"
 const Footer = () => {
   return (
     <FooterContainer className="footer">
@@ -30,10 +30,10 @@ const Footer = () => {
         <FooterLink to="/about">Sponsorship</FooterLink>
         </FooterLinkItems>
         <FooterLinkItems>
-          <FooterLinkTitle>Social Media</FooterLinkTitle>
+          <FooterLinkTitle style={{alignContent:"center"}}>Social Media</FooterLinkTitle>
           <FooterLink to="https://www.facebook.com/Widewaysolutionscom-107382601397950" target="_blank"><FontAwesomeIcon icon={faFacebook} size="lg"  color="#104c92" align="center"/></FooterLink>
           <FooterLink to="https://twitter.com/WidewayEngenie1" target="_blank"><FontAwesomeIcon icon={faTwitter} size="lg"  color="#104c92"/></FooterLink>
-
+          <FooterLink to="https://www.instagram.com/wideway_engineering_solutions/ " target="_blank"><FontAwesomeIcon icon={faInstagram} size="lg"  color="#104c92"/></FooterLink>
         </FooterLinkItems>
       </FooterLinksWrapper>
     </FooterContainer>

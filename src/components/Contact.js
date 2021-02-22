@@ -64,16 +64,10 @@ const Contact = () => {
         >
           Send us a message
         </div>
-<<<<<<< HEAD
-        <form
-          action="#"
-          className="shadow-sm rounded-md md:max-w-4xl p-8 text-black-900 font-extrabold"
-        >
-=======
+      
         <form target="_blank" action="https://formsubmit.co/sales@widewaysolutions.com" method="POST" className="shadow-sm rounded-md md:max-w-4xl p-8 text-black-900 font-extrabold">
         <input type="hidden" name="_template" value="table" />
         <input type="hidden" name="_subject" value="New submission!" />
->>>>>>> 335bf8ab4926e9c1a539e53ff742b00846745e18
           <div className="mb-6">
           
             <label htmlFor="name" className="mb-3 block">
