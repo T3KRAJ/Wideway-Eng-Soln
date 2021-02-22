@@ -64,17 +64,25 @@ const Contact = () => {
         >
           Send us a message
         </div>
+<<<<<<< HEAD
         <form
           action="#"
           className="shadow-sm rounded-md md:max-w-4xl p-8 text-black-900 font-extrabold"
         >
+=======
+        <form target="_blank" action="https://formsubmit.co/sales@widewaysolutions.com" method="POST" className="shadow-sm rounded-md md:max-w-4xl p-8 text-black-900 font-extrabold">
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_subject" value="New submission!" />
+>>>>>>> 335bf8ab4926e9c1a539e53ff742b00846745e18
           <div className="mb-6">
+          
             <label htmlFor="name" className="mb-3 block">
               Full name:
             </label>
             <input
               type="text"
               id="name"
+              name="Full Name"
               className=" bg-white rounded-md border border-gray-900 p-3 focus:outline-none w-full md:max-w-4xl"
               placeholder="John Doe"
               required
@@ -87,6 +95,7 @@ const Contact = () => {
             <input
               type="email"
               id="email"
+              name="Email Address"
               className="bg-white rounded-md border border-gray-900 p-3 focus:outline-none w-full"
               placeholder="john.doe@company.com"
               required
@@ -99,6 +108,7 @@ const Contact = () => {
             <input
               type="number"
               id="contacts"
+              name="Phone Number"
               className="bg-white rounded-md border border-gray-900 p-3 focus:outline-none w-full"
               placeholder="+91 7845215178"
               required
@@ -109,6 +119,7 @@ const Contact = () => {
               Message:
             </label>
             <textarea
+            name="Message"
               className="resize-none border rounded-md bg-white rounded-md border border-gray-900 p-3 focus:outline-none w-full"
               placeholder="Your message..."
               required
