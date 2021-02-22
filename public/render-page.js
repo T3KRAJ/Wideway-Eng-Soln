@@ -50925,9 +50925,19 @@ var Contact = function Contact() {
     "data-aos": "fade-down",
     className: "uppercase tracking-wide text-xl   font-extrabold text-center"
   }, "Send us a message"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    action: "#",
+    target: "_blank",
+    action: "https://formsubmit.co/sales@widewaysolutions.com",
+    method: "POST",
     className: "shadow-sm rounded-md md:max-w-4xl p-8 text-black-900 font-extrabold"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "hidden",
+    name: "_template",
+    value: "table"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "hidden",
+    name: "_subject",
+    value: "New submission!"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "mb-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     htmlFor: "name",
@@ -50935,6 +50945,7 @@ var Contact = function Contact() {
   }, "Full name:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "text",
     id: "name",
+    name: "Full Name",
     className: " bg-white rounded-md border border-gray-900 p-3 focus:outline-none w-full md:max-w-4xl",
     placeholder: "John Doe",
     required: true
@@ -50946,6 +50957,7 @@ var Contact = function Contact() {
   }, "Email address:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "email",
     id: "email",
+    name: "Email Address",
     className: "bg-white rounded-md border border-gray-900 p-3 focus:outline-none w-full",
     placeholder: "john.doe@company.com",
     required: true
@@ -50957,6 +50969,7 @@ var Contact = function Contact() {
   }, "Phone:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "number",
     id: "contacts",
+    name: "Phone Number",
     className: "bg-white rounded-md border border-gray-900 p-3 focus:outline-none w-full",
     placeholder: "+91 7845215178",
     required: true
@@ -50966,6 +50979,7 @@ var Contact = function Contact() {
     htmlFor: "name",
     className: "mb-3 block"
   }, "Message:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+    name: "Message",
     className: "resize-none border rounded-md bg-white rounded-md border border-gray-900 p-3 focus:outline-none w-full",
     placeholder: "Your message...",
     required: true
@@ -51026,7 +51040,11 @@ var Footer = function Footer() {
     to: "/about"
   }, "Destinations"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterLink, {
     to: "/about"
-  }, "Sponsorship")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterLinkItems, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterLinkTitle, null, "Social Media"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterLink, {
+  }, "Sponsorship")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterLinkItems, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterLinkTitle, {
+    style: {
+      alignContent: "center"
+    }
+  }, "Social Media"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterLink, {
     to: "https://www.facebook.com/Widewaysolutionscom-107382601397950",
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
@@ -51042,14 +51060,13 @@ var Footer = function Footer() {
     size: "lg",
     color: "#104c92"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterLink, {
-    to: "/about"
-  }, "Contact"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterLink, {
-    to: "/about"
-  }, "Support"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterLink, {
-    to: "/about"
-  }, "Destinations"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterLink, {
-    to: "/about"
-  }, "Sponsorship"))));
+    to: "https://www.instagram.com/wideway_engineering_solutions/ ",
+    target: "_blank"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faInstagram"],
+    size: "lg",
+    color: "#104c92"
+  })))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -51575,6 +51592,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-icons/fa */ "./node_modules/react-icons/fa/index.esm.js");
 /* harmony import */ var _data_MenuData__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../data/MenuData */ "./src/data/MenuData.js");
 /* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Button */ "./src/components/Button.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fortawesome/free-brands-svg-icons */ "./node_modules/@fortawesome/free-brands-svg-icons/index.es.js");
+
+
 
 
 
@@ -51612,7 +51633,12 @@ var Header = function Header(props) {
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     ref: listener
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Bar, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Info, null, "+49 30 209164630"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Info, null, "info@widewayengineers.com")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MainNav, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Bar, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Info, null, "+49 30 209164630"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_scroll__WEBPACK_IMPORTED_MODULE_1__["Link"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faFacebook"],
+    size: "lg",
+    color: "#104c92",
+    align: "center"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Info, null, "info@widewayengineers.com")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MainNav, {
     postn: scrollState,
     id: "mainNav",
     theme: props.theme !== null ? props.theme.toString() : null

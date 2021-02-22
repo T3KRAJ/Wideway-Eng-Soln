@@ -4,6 +4,8 @@ import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons"
 
 const Header = props => {
   const listener = useRef(null);
@@ -32,8 +34,11 @@ const Header = props => {
     <>
       <nav ref={listener}>
         <Bar>
-          <Info>+49 30 209164630</Info>
-          <Info>info@widewayengineers.com</Info>
+          <Info>+91 7455824744</Info>
+          <Social><FontAwesomeIcon icon={faFacebook} size="lg"  color="#104c92" align="center"/></Social>
+          <Social><FontAwesomeIcon icon={faTwitter} size="lg"  color="#104c92" align="center"/></Social>
+          <Social><FontAwesomeIcon icon={faInstagram} size="lg"  color="#104c92" align="center"/></Social>
+          <Info>info@widewaysolutions.com</Info>
         </Bar>
         <MainNav postn={scrollState} id="mainNav" theme={props.theme !== null ? props.theme.toString(): null}>
           <NavLink to="/">
@@ -107,7 +112,9 @@ const Bar = styled.div`
 const Info = styled.p`
   margin: 0 20px;
 `
-
+const Social = styled.a`
+  margin: 0 20px;
+`
 const MainNav = styled.nav`
   background: ${({postn, theme}) => (theme)? (postn==="top" ? 'transparent' : '#121212ea'): (postn==="top" ? 'transparent' : '#121212ea')};
   height: ${({postn}) => (postn==="top" ? '75px' : '62px')};
