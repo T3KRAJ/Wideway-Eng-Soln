@@ -1,14 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons"
 const Footer = () => {
   return (
     <FooterContainer className="footer">
       <FooterLinksWrapper>
         <FooterDesc>
           <h1>Wideway Engineering solutions</h1>
-          <p>Find Great Experiences in Villages of Nepal with Vaolo®. </p>
+          <p>Delivering exponential value to engineering enterprises by collaborating with them across three key tenets </p>
         </FooterDesc>
         <FooterLinkItems>
           <FooterLinkTitle>Contact Us</FooterLinkTitle>
@@ -30,11 +31,9 @@ const Footer = () => {
         </FooterLinkItems>
         <FooterLinkItems>
           <FooterLinkTitle>Social Media</FooterLinkTitle>
-          <FooterLink to="/about">About</FooterLink>
-          <FooterLink to="/about">Contact</FooterLink>
-          <FooterLink to="/about">Support</FooterLink>
-          <FooterLink to="/about">Destinations</FooterLink>
-          <FooterLink to="/about">Sponsorship</FooterLink>
+          <FooterLink to="https://www.facebook.com/Widewaysolutionscom-107382601397950" target="_blank"><FontAwesomeIcon icon={faFacebook} size="lg"  color="#104c92" align="center"/></FooterLink>
+          <FooterLink to="https://twitter.com/WidewayEngenie1" target="_blank"><FontAwesomeIcon icon={faTwitter} size="lg"  color="#104c92"/></FooterLink>
+
         </FooterLinkItems>
       </FooterLinksWrapper>
     </FooterContainer>
