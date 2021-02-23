@@ -50913,10 +50913,10 @@ var Contact = function Contact() {
     "data-aos": "fade-down",
     className: "uppercase tracking-wide text-sm   text-xl  font-black font-bold mb-5 text-center"
   }, "Our Office"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Loc, {
-    className: "items-stretch md:items-center text-left tracking-wider font-bold -mt-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "items-stretch md:items-center text-left tracking-wider font-bold -mt-8"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "ml-10 text-center text-bold"
-  }, "Registered Office"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "331/6 Sarna Toli, Kadru, Doranda", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Ranchi - 834002 Jharkahnd, India", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Ph: +91 9760117913", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Email:sales@widewaysolutions.com", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, "Registered Office"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "331/6 Sarna Toli, Kadru, Doranda", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Ranchi - 834002 Jharkahnd, India", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Ph: +91 7455824744, +91 9760117913", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Email:sales@widewaysolutions.com", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "ml-10 text-center text-bold"
   }, "  Corporate Office"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Kheri Gaon, Dehradun", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Uttarakhand 248007 India", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Ph: +91 9760117913", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Email:info@widewaysolutions.com", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "md:flex-shrink-0 w-full md:w-1/2 lg:w-1/2 mt-9",
@@ -51633,12 +51633,21 @@ var Header = function Header(props) {
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     ref: listener
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Bar, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Info, null, "+49 30 209164630"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_scroll__WEBPACK_IMPORTED_MODULE_1__["Link"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Bar, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Info, null, "+91 7455824744"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Social, {
+    href: "www.facebook.com"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
     icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faFacebook"],
     size: "lg",
-    color: "#104c92",
     align: "center"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Info, null, "info@widewayengineers.com")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MainNav, {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Social, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faTwitter"],
+    size: "lg",
+    align: "center"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Social, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faInstagram"],
+    size: "lg",
+    align: "center"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Info, null, "  info@widewaysolutions.com")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MainNav, {
     postn: scrollState,
     id: "mainNav",
     theme: props.theme !== null ? props.theme.toString() : null
@@ -51687,7 +51696,10 @@ var Bar = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConf
 })(["background:#104C91;color:#fff;height:26px;display:flex;width:100%;justify-content:space-between;padding:0.28rem calc((100vw - 1300px) / 2);font-size:0.85rem;z-index:100;overflow:hidden;position:fixed;"]);
 var Info = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p.withConfig({
   displayName: "header__Info"
-})(["margin:0 20px;"]);
+})(["margin:0 0px;"]);
+var Social = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a.withConfig({
+  displayName: "header__Social"
+})(["margin:0 20px;color:#fff;:hover{color:#0f102c;}"]);
 var MainNav = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].nav.withConfig({
   displayName: "header__MainNav"
 })(["background:", ";height:", ";top:26px;display:flex;width:100%;justify-content:space-between;padding:0.5rem calc((100vw - 1300px) / 2);z-index:100;overflow:hidden;position:fixed;"], function (_ref2) {

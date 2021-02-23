@@ -23,7 +23,8 @@ const Contact = () => {
           Our Office
         </div>
 
-        <Loc className="items-stretch md:items-center text-left tracking-wider font-bold -mt-10">
+        <Loc className="items-stretch md:items-center text-left tracking-wider font-bold -mt-8">
+        <br/>
        <span className="ml-10 text-center text-bold">Registered Office</span> 
           <br />
           <br />
@@ -31,7 +32,7 @@ const Contact = () => {
           <br />
           Ranchi - 834002 Jharkahnd, India
           <br />
-          Ph: +91 9760117913
+          Ph: +91 7455824744, +91 9760117913
           <br />
           Email:sales@widewaysolutions.com
           <br />

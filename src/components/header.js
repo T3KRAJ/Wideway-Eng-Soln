@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react"
-import { Link } from "react-scroll"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
@@ -35,10 +35,11 @@ const Header = props => {
       <nav ref={listener}>
         <Bar>
           <Info>+91 7455824744</Info>
-          <Social><FontAwesomeIcon icon={faFacebook} size="lg"  color="#104c92" align="center"/></Social>
-          <Social><FontAwesomeIcon icon={faTwitter} size="lg"  color="#104c92" align="center"/></Social>
-          <Social><FontAwesomeIcon icon={faInstagram} size="lg"  color="#104c92" align="center"/></Social>
-          <Info>info@widewaysolutions.com</Info>
+          <Social  to="https://www.facebook.com/Widewaysolutionscom-107382601397950" target="_blank"><FontAwesomeIcon icon={faFacebook} size="lg"   align="center"/></Social>
+          <Social to="https://twitter.com/WidewayEngenie1" target="_blank"><FontAwesomeIcon icon={faTwitter} size="lg"  align="center"/></Social>
+          <Social to="https://www.instagram.com/wideway_engineering_solutions/ " target="_blank"><FontAwesomeIcon icon={faInstagram} size="lg"  align="center"/></Social>
+          
+          <Info>  info@widewaysolutions.com</Info>
         </Bar>
         <MainNav postn={scrollState} id="mainNav" theme={props.theme !== null ? props.theme.toString(): null}>
           <NavLink to="/">
@@ -63,12 +64,14 @@ const Header = props => {
                 {title}
               </NavLink>
             ))}
+
           </NavMenu>
           <NavBtn>
             <Button primary="true" round="true" to="/trips">
               Make a deal
             </Button>
           </NavBtn>
+          
           <NavBtn>
             <Dark>
            
@@ -110,10 +113,16 @@ const Bar = styled.div`
 `
 
 const Info = styled.p`
-  margin: 0 20px;
+  margin: 0 0px;
 `
-const Social = styled.a`
+const Social = styled(Link)`
   margin: 0 20px;
+  text-decoration: none;
+  color:#fff;
+  :hover{
+    color:#0f102c;
+    transition: 0.3s ease-out;
+  }
 `
 const MainNav = styled.nav`
   background: ${({postn, theme}) => (theme)? (postn==="top" ? 'transparent' : '#121212ea'): (postn==="top" ? 'transparent' : '#121212ea')};
