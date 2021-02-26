@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "wideway-engineering-solutions",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Engineering Your Journey: Delivering exponential value to engineering enterprises by collaborating with them across three key tenets",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Tek Raj Joshi, Ganesh Chandra Pandey",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
@@ -12,8 +12,9 @@
     "aos": "^2.3.4",
     "autoprefixer": "^10.1.0",
     "babel-plugin-styled-components": "^1.12.0",
-    "gatsby": "^2.26.1",
+    "gatsby": "^2.32.8",
     "gatsby-image": "^2.5.0",
+    "gatsby-plugin-fontawesome-css": "^1.0.0",
     "gatsby-plugin-manifest": "^2.6.1",
     "gatsby-plugin-offline": "^3.4.0",
     "gatsby-plugin-postcss": "^3.4.0",

@@ -10,7 +10,7 @@ const Gallery = () => {
     AOS.init({delay:200,duration:1200,once:false});
   })
   const data = useStaticQuery(graphql`
-      query MyQuery {
+      query GalleryQuery {
         allGalleryDataJson {
           edges {
             node {

@@ -34,11 +34,14 @@ const Header = props => {
     <>
       <nav ref={listener}>
         <Bar>
-          <Info>+91 7455824744</Info>
-          <Social><FontAwesomeIcon icon={faFacebook} size="lg"  color="#104c92" align="center"/></Social>
-          <Social><FontAwesomeIcon icon={faTwitter} size="lg"  color="#104c92" align="center"/></Social>
-          <Social><FontAwesomeIcon icon={faInstagram} size="lg"  color="#104c92" align="center"/></Social>
-          <Info>info@widewaysolutions.com</Info>
+          <Info>+917455824744</Info>
+          <div>
+            <Social><FontAwesomeIcon icon={faFacebook} size="lg"  color="#104c92" align="center"/></Social>
+            <Social><FontAwesomeIcon icon={faTwitter} size="lg"  color="#104c92" align="center"/></Social>
+            <Social><FontAwesomeIcon icon={faInstagram} size="lg"  color="#104c92" align="center"/></Social>
+          </div>
+          
+          <Info>sales@widewaysolutions.com</Info>
         </Bar>
         <MainNav postn={scrollState} id="mainNav" theme={props.theme !== null ? props.theme.toString(): null}>
           <NavLink to="/">
@@ -104,7 +107,7 @@ const Bar = styled.div`
   justify-content: space-between;
   padding: 0.28rem calc((100vw - 1300px) / 2);
   font-size: 0.85rem;
-  z-index: 100;
+  z-index: 200;
   overflow: hidden;
   position: fixed;
 `

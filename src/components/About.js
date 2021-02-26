@@ -41,7 +41,7 @@ const About = () => {
               ABOUT US
             </span>
           </div>
-          <p className="mt-10 text-black-900 font-bold">
+          <p className="mt-10 block text-black-900">
             Annihilation of the barriers between the nations has
             brovided a welcome opportunity to the international traders to
             broaden the market and take any commodity across the globe in order

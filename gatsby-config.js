@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Wideway enginnering solution`,
-    description: `WideWay Engineering Solution`,
-    author: `@gatsbyjs`,
+    description: `Engineering Your Journey: Delivering exponential value to engineering enterprises by collaborating with them across three key tenets`,
+    author: `@T3KRAJ, @DJANGOVERFLOW`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    
+    `gatsby-plugin-fontawesome-css`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -31,7 +31,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/images/wideway.jpg`, // This path is relative to the root of the site.
+        icon: `src/assets/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-transformer-json`,
