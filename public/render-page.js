@@ -50702,7 +50702,7 @@ const About = () => {
     className: "uppercase tracking-wide text-black  text-4xl text-indigo-500 font-semibold mb-5 text-center",
     id: "heading"
   }, "ABOUT US")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "mt-10 block text-black-900 text-xl"
+    className: "mt-10 block text-black-900 lg:text-xl"
   }, "Annihilation of the barriers between the nations has brovided a welcome opportunity to the international traders to broaden the market and take any commodity across the globe in order to strengthen the boods overseas. So with an insight to stimulate the thought of global trading we are providing consumers variety of goods with effective service and queater choice with regard to this chief motto is to offer best and the contentment of the purchaser taking into consideration the wants and make a go of in this domain.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -51120,16 +51120,8 @@ function Ourmission() {
     className: "uppercase tracking-wide text-black  text-4xl text-indigo-500 font-semibold mb-5 text-center",
     id: "heading"
   }, "OUR MISSION")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "mt-10 block text-black-900 text-xl"
-  }, "Annihilation of the barriers between the nations has provided a welcome opportunity to the international traders to broaden the market and take any commodity across the globe in order to strengthen the bonds overseas. So , with an insight to stimulate thought of global trading we are providing consumers variety of goods with effective service and greater choice and our chief Moto is to offer the best.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "text-sm text-center mt-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button__WEBPACK_IMPORTED_MODULE_2__["Button"], {
-    round: "true",
-    primary: "true",
-    to: "/contact"
-  }, "Contact us")))));
+    className: "mt-10 block text-black-900 lg:text-xl text-align-center"
+  }, "Annihilation of the barriers between the nations has provided a welcome opportunity to the international traders to broaden the market and take any commodity across the globe in order to strengthen the bonds overseas. So , with an insight to stimulate thought of global trading we are providing consumers variety of goods with effective service and greater choice and our chief Moto is to offer the best."))));
 }
 
 /***/ }),

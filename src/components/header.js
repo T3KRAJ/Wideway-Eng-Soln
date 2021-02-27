@@ -32,11 +32,11 @@ const Header = props => {
 
   return (
     <>
-    <div class="icon-bar">
-  <a   rel=" noreferrer" href="https://www.facebook.com/Widewaysolutionscom-107382601397950/" target="_blank" class="facebook"><FontAwesomeIcon icon={faFacebook} size="lg"  role="button" aria-label="Facebook"/></a> 
-  <a  rel=" noreferrer" href="https://twitter.com/WidewayEngenie1/" target="_blank" class="twitter"><FontAwesomeIcon icon={faTwitter} size="lg" role="button" aria-label="Twitter"/></a> 
-  <a  rel=" noreferrer" href="#/" class="whatsapp"><FontAwesomeIcon icon={faWhatsapp} size="lg" role="button" aria-label="Whatsapp"/></a>
-  <a  rel=" noreferrer" href="https://www.instagram.com/wideway_engineering_solutions/" target="_blank" class="instagram"><FontAwesomeIcon icon={faInstagram} size="lg" role="button" aria-label="Instagram"/></a> 
+    <div className="icon-bar">
+  <a   rel=" noreferrer" href="https://www.facebook.com/Widewaysolutionscom-107382601397950/" target="_blank" className="facebook"><FontAwesomeIcon icon={faFacebook} size="lg"  role="button" aria-label="Facebook"/></a> 
+  <a  rel=" noreferrer" href="https://twitter.com/WidewayEngenie1/" target="_blank" className="twitter"><FontAwesomeIcon icon={faTwitter} size="lg" role="button" aria-label="Twitter"/></a> 
+  <a  rel=" noreferrer" href="#/" className="whatsapp"><FontAwesomeIcon icon={faWhatsapp} size="lg" role="button" aria-label="Whatsapp"/></a>
+  <a  rel=" noreferrer" href="https://www.instagram.com/wideway_engineering_solutions/" target="_blank" className="instagram"><FontAwesomeIcon icon={faInstagram} size="lg" role="button" aria-label="Instagram"/></a> 
 
 </div>
       <nav ref={listener}>
