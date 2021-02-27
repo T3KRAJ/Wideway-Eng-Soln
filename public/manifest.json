@@ -1,0 +1,7 @@
+{
+  "main.js": "render-page.js",
+  "main.js.map": "render-page.js.map",
+  "static/hero.png": "static/hero-b390caae9c7314fdf9ee2bd99a74b7c1.png",
+  "static/heroimg.svg": "static/heroimg-5c50f901e8c59e1c4f792b2e87cc4ecf.svg",
+  "static/logo.svg": "static/logo-697b539967fb754bb693a47f43168a89.svg"
+}
