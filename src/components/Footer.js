@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons"
@@ -31,9 +30,9 @@ const Footer = () => {
         </FooterLinkItems>
         <FooterLinkItems>
           <FooterLinkTitle style={{alignContent:"center"}}>Social Media</FooterLinkTitle>
-          <FooterLink to="https://www.facebook.com/Widewaysolutionscom-107382601397950" target="_blank"><FontAwesomeIcon icon={faFacebook} size="lg"  color="#104c92" align="center"/></FooterLink>
-          <FooterLink to="https://twitter.com/WidewayEngenie1" target="_blank"><FontAwesomeIcon icon={faTwitter} size="lg"  color="#104c92"/></FooterLink>
-          <FooterLink to="https://www.instagram.com/wideway_engineering_solutions/ " target="_blank"><FontAwesomeIcon icon={faInstagram} size="lg"  color="#104c92"/></FooterLink>
+          <FooterLink href="https://www.facebook.com/Widewaysolutionscom-107382601397950" target="_blank"><FontAwesomeIcon icon={faFacebook} size="lg"  color="#104c92" align="center"/></FooterLink>
+          <FooterLink href="https://twitter.com/WidewayEngenie1" target="_blank"><FontAwesomeIcon icon={faTwitter} size="lg"  color="#104c92"/></FooterLink>
+          <FooterLink href="https://www.instagram.com/wideway_engineering_solutions/ " target="_blank"><FontAwesomeIcon icon={faInstagram} size="lg"  color="#104c92"/></FooterLink>
         </FooterLinkItems>
       </FooterLinksWrapper>
     </FooterContainer>
@@ -85,7 +84,7 @@ const FooterLinkTitle = styled.h2`
   margin-bottom: 16px;
 `
 
-const FooterLink = styled(Link)`
+const FooterLink = styled.a`
   text-decoration: none;
   font-size: 14px;
   margin-bottom: 0.5rem;

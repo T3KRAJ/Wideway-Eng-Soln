@@ -35,11 +35,12 @@ const Header = props => {
       <nav ref={listener}>
         <Bar>
           <Info>+91 7455824744</Info>
-          <Social  to="https://www.facebook.com/Widewaysolutionscom-107382601397950" target="_blank"><FontAwesomeIcon icon={faFacebook} size="lg"   align="center"/></Social>
-          <Social to="https://twitter.com/WidewayEngenie1" target="_blank"><FontAwesomeIcon icon={faTwitter} size="lg"  align="center"/></Social>
-          <Social to="https://www.instagram.com/wideway_engineering_solutions/ " target="_blank"><FontAwesomeIcon icon={faInstagram} size="lg"  align="center"/></Social>
+          {/* <Social  to="https://www.facebook.com/Widewaysolutionscom-107382601397950" target="_blank"><FontAwesomeIcon icon={faFacebook} size="lg"   align="center"/></Social> */}
+          {/* <Social to="https://twitter.com/WidewayEngenie1" target="_blank"><FontAwesomeIcon icon={faTwitter} size="lg"  align="center"/></Social> */}
+          {/* <Social to="https://www.instagram.com/wideway_engineering_solutions/ " target="_blank"><FontAwesomeIcon icon={faInstagram} size="lg"  align="center"/></Social> */}
           
           <Info>  info@widewaysolutions.com</Info>
+         
         </Bar>
         <MainNav postn={scrollState} id="mainNav" theme={props.theme !== null ? props.theme.toString(): null}>
           <NavLink to="/">
@@ -107,7 +108,7 @@ const Bar = styled.div`
   justify-content: space-between;
   padding: 0.28rem calc((100vw - 1300px) / 2);
   font-size: 0.85rem;
-  z-index: 100;
+  z-index: 200;
   overflow: hidden;
   position: fixed;
 `

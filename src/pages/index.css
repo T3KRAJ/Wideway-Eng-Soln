@@ -171,7 +171,7 @@ color: #ffffff;
 color: #fffdfd;
 }
 .dark-mode #navLink:hover{
-text-shadow: 11px -11px 3px #686767;
+/* text-shadow: 11px -11px 3px #686767; */
 font-size: 17px;
 }
 
@@ -219,7 +219,8 @@ color: #020202;
 font-weight: 900;
 } */
 .light-mode #navLink:hover{
-text-shadow: 11px -11px 3px #686767;
+/* text-shadow: 11px -11px 3px #686767; */
+color: rgb(187, 76, 76);
 font-size: 17px;
 }
 .light-mode #mainNav{

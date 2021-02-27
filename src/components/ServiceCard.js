@@ -44,16 +44,16 @@ const ServiceCard = props => {
             }}
           >
             <div
-              class="w-20 h-20 rounded-full mx-auto flex-none bg-cover rounded-t sm:rounded-2xl lg:rounded-t-none lg:rounded-l text-center "
+              className="w-20 h-20 rounded-full mx-auto flex-none bg-cover rounded-t sm:rounded-2xl lg:rounded-t-none lg:rounded-l text-center "
               style={{ backgroundImage: `url(${props.src})` }}
               title="Woman holding a mug"
             ></div>
-            <div class="border-r border-b border-l border-none lg:border-l-0 lg:border-t lg:border-gray-400 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-              <div class="mt-4">
-                <div class="text-gray-900 font-bold text-xl mb-2">
+            <div className="border-r border-b border-l border-none lg:border-l-0 lg:border-t lg:border-gray-400 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+              <div className="mt-4">
+                <div className="text-gray-900 font-bold text-xl mb-2">
                   {props.service}
                 </div>
-                <p class="text-gray-700 text-sm align-text-left font-serif">
+                <p className="text-gray-700 text-sm align-text-left font-serif">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Voluptatibus quia, nulla! Maiores et perferendis eaque,
                   exercitationem praesentium nihil. Lorem ipsum dolor sit amet,
