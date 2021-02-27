@@ -1,14 +1,14 @@
 var plugins = [{
-      plugin: require('C:/Users/Tekraj/Documents/reactprojects/Gatsby_Projects/Wideway-Eng-Soln/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('C:/Users/GANESH PANDEY/Desktop/wideway/Wideway-Eng-Soln/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('C:/Users/Tekraj/Documents/reactprojects/Gatsby_Projects/Wideway-Eng-Soln/node_modules/gatsby-plugin-fontawesome-css/gatsby-ssr'),
+      plugin: require('C:/Users/GANESH PANDEY/Desktop/wideway/Wideway-Eng-Soln/node_modules/gatsby-plugin-fontawesome-css/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('C:/Users/Tekraj/Documents/reactprojects/Gatsby_Projects/Wideway-Eng-Soln/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('C:/Users/GANESH PANDEY/Desktop/wideway/Wideway-Eng-Soln/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"Wideway Engineering Solutions","short_name":"WES","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/assets/images/favicon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"81890bcb809b51a3bd9fbe82770c4901"},
     },{
-      plugin: require('C:/Users/Tekraj/Documents/reactprojects/Gatsby_Projects/Wideway-Eng-Soln/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      plugin: require('C:/Users/GANESH PANDEY/Desktop/wideway/Wideway-Eng-Soln/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[],"displayName":true,"fileName":true,"minify":true,"namespace":"","transpileTemplateLiterals":true,"pure":false},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
