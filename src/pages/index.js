@@ -8,12 +8,13 @@ import SEO from "../components/seo"
 import Services from "../components/Services"
 import "./index.css"
 import Partners from "../components/Partners"
-
+import Ourmission from "../components/Ourmission"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Hero />
     <About />
+    <Ourmission/>
     <Services />
     <Gallery />
     <Partners />
