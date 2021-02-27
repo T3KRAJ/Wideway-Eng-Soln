@@ -2,7 +2,6 @@ import React, { useEffect } from "react"
 import AOS from "aos"
 
 export default function Ourmission() {
-
   const logo = require("../assets/images/ourmission.png")
   useEffect(() => {
     AOS.init({ delay: 200, duration: 1200, once: false })
@@ -24,7 +23,9 @@ export default function Ourmission() {
           src={logo}
           title="Site's logo"
           alt="logo"
-          data-aos="flip-left"
+          data-aos="fade-up-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
         />
       </div>
 
@@ -35,7 +36,7 @@ export default function Ourmission() {
         <div>
           <div className="text-black mb-2 text-center">
             <span
-              className="uppercase tracking-wide text-black  text-4xl text-indigo-500 font-semibold mb-5 text-center"
+              className="uppercase tracking-wide text-black  text-3xl text-indigo-500 font-semibold mb-5 text-center"
               id="heading"
             >
               OUR MISSION

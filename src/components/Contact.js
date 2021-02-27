@@ -34,7 +34,7 @@ const Contact = () => {
           <br />
           Ph: +91 7455824744, +91 9760117913
           <br />
-          Email:sales@widewaysolutions.com
+          Email:info@widewaysolutions.com
           <br />
           <br />
           <br />
@@ -47,14 +47,14 @@ const Contact = () => {
           <br />
           Ph: +91 9760117913
           <br />
-          Email:info@widewaysolutions.com
+          Email:sales@widewaysolutions.com
           <br />
           <br />
         </Loc>
       </div>
 
       <div
-        className="md:flex-shrink-0 w-full md:w-1/2 lg:w-1/2 mt-20"
+        className="md:flex-shrink-0 w-full md:w-1/2 lg:w-1/2 mt-10"
         data-aos="fade-left"
       >
         <div

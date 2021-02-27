@@ -1,19 +1,20 @@
 [
+  
+    {
+        "img": "../assets/images/gerds.jpg",
+        "alt": "partner2",
+        "name": "GERDS International",
+        "link": "#"
+    },
+    {
+        "img": "../assets/images/srb.png",
+        "alt": "partner3",
+        "name": "SRB POWER INDIA PVT. LTD.",
+        "link": "http://www.srbsolar.com/"
+    },
     {
         "img": "../assets/images/p1.jpg",
         "alt": "partner1",
-        "name": "Partner 1",
-        "link": "#"
-    },
-    {
-        "img": "../assets/images/p1.jpg",
-        "alt": "partner2",
-        "name": "Partner 2",
-        "link": "#"
-    },
-    {
-        "img": "../assets/images/p1.jpg",
-        "alt": "partner3",
         "name": "Partner 3",
         "link": "#"
     },
