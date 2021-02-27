@@ -5,7 +5,7 @@ import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faFacebook, faInstagram, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons"
 
 const Header = props => {
   const listener = useRef(null);
@@ -32,15 +32,17 @@ const Header = props => {
 
   return (
     <>
+    <div class="icon-bar">
+  <a   rel=" noreferrer" href="https://www.facebook.com/Widewaysolutionscom-107382601397950/" target="_blank" class="facebook"><FontAwesomeIcon icon={faFacebook} size="lg"  role="button" aria-label="Facebook"/></a> 
+  <a  rel=" noreferrer" href="https://twitter.com/WidewayEngenie1/" target="_blank" class="twitter"><FontAwesomeIcon icon={faTwitter} size="lg" role="button" aria-label="Twitter"/></a> 
+  <a  rel=" noreferrer" href="#/" class="whatsapp"><FontAwesomeIcon icon={faWhatsapp} size="lg" role="button" aria-label="Whatsapp"/></a>
+  <a  rel=" noreferrer" href="https://www.instagram.com/wideway_engineering_solutions/" target="_blank" class="instagram"><FontAwesomeIcon icon={faInstagram} size="lg" role="button" aria-label="Instagram"/></a> 
+
+</div>
       <nav ref={listener}>
         <Bar>
           <Info>+91 7455824744</Info>
-          {/* <Social  to="https://www.facebook.com/Widewaysolutionscom-107382601397950" target="_blank"><FontAwesomeIcon icon={faFacebook} size="lg"   align="center"/></Social> */}
-          {/* <Social to="https://twitter.com/WidewayEngenie1" target="_blank"><FontAwesomeIcon icon={faTwitter} size="lg"  align="center"/></Social> */}
-          {/* <Social to="https://www.instagram.com/wideway_engineering_solutions/ " target="_blank"><FontAwesomeIcon icon={faInstagram} size="lg"  align="center"/></Social> */}
-          
-          <Info>  info@widewaysolutions.com</Info>
-         
+          <Info>info@widewaysolutions.com</Info>
         </Bar>
         <MainNav postn={scrollState} id="mainNav" theme={props.theme !== null ? props.theme.toString(): null}>
           <NavLink to="/">
@@ -116,15 +118,7 @@ const Bar = styled.div`
 const Info = styled.p`
   margin: 0 0px;
 `
-const Social = styled(Link)`
-  margin: 0 20px;
-  text-decoration: none;
-  color:#fff;
-  :hover{
-    color:#0f102c;
-    transition: 0.3s ease-out;
-  }
-`
+
 const MainNav = styled.nav`
   background: ${({postn, theme}) => (theme)? (postn==="top" ? 'transparent' : '#121212ea'): (postn==="top" ? 'transparent' : '#121212ea')};
   height: ${({postn}) => (postn==="top" ? '75px' : '62px')};

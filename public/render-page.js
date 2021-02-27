@@ -50628,6 +50628,17 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzg4IiBoZWlnaHQ9Ijcx
 
 /***/ }),
 
+/***/ "./src/assets/images/ourmission.png":
+/*!******************************************!*\
+  !*** ./src/assets/images/ourmission.png ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/ourmission-95faf950a468806f02e3fc1ae673bfc8.png";
+
+/***/ }),
+
 /***/ "./src/assets/images/transportation.svg":
 /*!**********************************************!*\
   !*** ./src/assets/images/transportation.svg ***!
@@ -50691,7 +50702,7 @@ const About = () => {
     className: "uppercase tracking-wide text-black  text-4xl text-indigo-500 font-semibold mb-5 text-center",
     id: "heading"
   }, "ABOUT US")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "mt-10 block text-black-900"
+    className: "mt-10 block text-black-900 text-xl"
   }, "Annihilation of the barriers between the nations has brovided a welcome opportunity to the international traders to broaden the market and take any commodity across the globe in order to strengthen the boods overseas. So with an insight to stimulate the thought of global trading we are providing consumers variety of goods with effective service and queater choice with regard to this chief motto is to offer best and the contentment of the purchaser taking into consideration the wants and make a go of in this domain.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -51054,6 +51065,72 @@ const HeroH1 = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h1.with
 const HeroP = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p.withConfig({
   displayName: "Hero__HeroP"
 })(["text-align:left font-size:clamp(0.2rem,2vw,1rem);margin-bottom:1.5rem;padding:0 2rem;"]);
+
+/***/ }),
+
+/***/ "./src/components/Ourmission.js":
+/*!**************************************!*\
+  !*** ./src/components/Ourmission.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Ourmission; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Button */ "./src/components/Button.js");
+
+
+
+function Ourmission() {
+  const logo = __webpack_require__(/*! ../assets/images/ourmission.png */ "./src/assets/images/ourmission.png");
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    aos__WEBPACK_IMPORTED_MODULE_1___default.a.init({
+      delay: 200,
+      duration: 1200,
+      once: false
+    });
+  });
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "about",
+    className: "md:h-screen items-center md:flex max-w-md overflow-hidden p-12 md:container md:mx-auto shadow-2xl  rounded-t"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      transformStyle: "preserve-3d",
+      transform: "perspective(960px)"
+    },
+    className: "animate-none h-50 mt-20 md:h-auto lg:h-auto w-full md:w-1/3  lg:w-1/3  flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden p-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "h-50 md:h-auto lg:h-auto w-full md:w-full lg:w-full  flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden p-4",
+    src: logo,
+    title: "Site's logo",
+    alt: "logo",
+    "data-aos": "flip-left"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "data-aos": "fade-left",
+    className: "rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "text-black mb-2 text-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "uppercase tracking-wide text-black  text-4xl text-indigo-500 font-semibold mb-5 text-center",
+    id: "heading"
+  }, "OUR MISSION")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "mt-10 block text-black-900 text-xl"
+  }, "Annihilation of the barriers between the nations has provided a welcome opportunity to the international traders to broaden the market and take any commodity across the globe in order to strengthen the bonds overseas. So , with an insight to stimulate thought of global trading we are providing consumers variety of goods with effective service and greater choice and our chief Moto is to offer the best.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex items-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "text-sm text-center mt-10"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+    round: "true",
+    primary: "true",
+    to: "/contact"
+  }, "Contact us")))));
+}
 
 /***/ }),
 
@@ -51562,9 +51639,50 @@ const Header = props => {
 
   const navlogo = __webpack_require__(/*! ../assets/images/navlogo.svg */ "./src/assets/images/navlogo.svg");
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    class: "icon-bar"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: " noreferrer",
+    href: "https://www.facebook.com/Widewaysolutionscom-107382601397950/",
+    target: "_blank",
+    class: "facebook"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faFacebook"],
+    size: "lg",
+    role: "button",
+    "aria-label": "Facebook"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: " noreferrer",
+    href: "https://twitter.com/WidewayEngenie1/",
+    target: "_blank",
+    class: "twitter"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faTwitter"],
+    size: "lg",
+    role: "button",
+    "aria-label": "Twitter"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: " noreferrer",
+    href: "#/",
+    class: "whatsapp"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faWhatsapp"],
+    size: "lg",
+    role: "button",
+    "aria-label": "Whatsapp"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    rel: " noreferrer",
+    href: "https://www.instagram.com/wideway_engineering_solutions/",
+    target: "_blank",
+    class: "instagram"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_7__["faInstagram"],
+    size: "lg",
+    role: "button",
+    "aria-label": "Instagram"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     ref: listener
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Bar, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Info, null, "+91 7455824744"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Info, null, "  info@widewaysolutions.com")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MainNav, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Bar, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Info, null, "+91 7455824744"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Info, null, "info@widewaysolutions.com")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MainNav, {
     postn: scrollState,
     id: "mainNav",
     theme: props.theme !== null ? props.theme.toString() : null
@@ -51613,9 +51731,6 @@ const Bar = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withCo
 const Info = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p.withConfig({
   displayName: "header__Info"
 })(["margin:0 0px;"]);
-const Social = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"]).withConfig({
-  displayName: "header__Social"
-})(["margin:0 20px;text-decoration:none;color:#fff;:hover{color:#0f102c;transition:0.3s ease-out;}"]);
 const MainNav = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].nav.withConfig({
   displayName: "header__MainNav"
 })(["background:", ";height:", ";top:26px;display:flex;width:100%;justify-content:space-between;padding:0.5rem calc((100vw - 1300px) / 2);z-index:100;overflow:hidden;position:fixed;"], ({
@@ -51913,6 +52028,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./index.css */ "./src/pages/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _components_Partners__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Partners */ "./src/components/Partners.js");
+/* harmony import */ var _components_Ourmission__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Ourmission */ "./src/components/Ourmission.js");
+
 
 
 
@@ -51926,7 +52043,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const IndexPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_seo__WEBPACK_IMPORTED_MODULE_6__["default"], {
   title: "Home"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Hero__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_About__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Services__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_gallery__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Partners__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Contact__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Hero__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_About__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Ourmission__WEBPACK_IMPORTED_MODULE_10__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Services__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_gallery__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Partners__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Contact__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 
 /* harmony default export */ __webpack_exports__["default"] = (IndexPage);
 
