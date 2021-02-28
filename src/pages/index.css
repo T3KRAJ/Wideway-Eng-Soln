@@ -182,11 +182,11 @@ font-size: 17px;
 .light-mode #about{
   color:  #212221;
   font-weight: 500;
-  background-color:#d2f0e12d;
+  background-color:#fff;
 }
 .light-mode #services{
   color:  #212221;
-  background-color:#d2f0e12d;
+  background-color:#fff;
 }
 .light-mode #services .cards{
 background: #858ce74f;

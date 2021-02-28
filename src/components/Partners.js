@@ -32,7 +32,6 @@ const Partners = () => {
     const picArray = []
     data.allPartnerDataJson.edges.forEach((item, index) => {
       picArray.push(
-
         <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" key={index} data-aos="flip-right" data-aos-easing="linear" data-aos-duration="1500">
         <div className="px-14">
           <Img
@@ -51,9 +50,8 @@ const Partners = () => {
     return picArray
   }
   return (
-    <div>
-      <section className="pt-20 pb-24 items-center">
-        <div className="container mx-auto px-4">
+      <section className="pt-20 pb-24 items-center" style={{background: '#104C91'}}>
+        <div className="container mx-auto px-4" >
           <div className="flex flex-wrap justify-center text-center mb-24">
             <div className="w-full lg:w-6/12 px-4">
               <h2 className="text-4xl text-indigo-500 font-semibold">Our Partners</h2>
@@ -64,7 +62,6 @@ const Partners = () => {
           </div>
         </div>
       </section>
-    </div>
   )
 }
 

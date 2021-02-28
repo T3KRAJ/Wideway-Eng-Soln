@@ -58,8 +58,8 @@ const Header = props => {
                id="navLink"
                 to={link}
                 // activeClass="active"
-                spy={true}
-                smooth={true}
+                spy={true.toString()}
+                smooth={true.toString()}
                 offset={-70}
                 duration={500}
                 key={index}
