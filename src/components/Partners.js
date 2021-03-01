@@ -37,7 +37,7 @@ const Partners = () => {
           <Img
             alt={item.node.alt}
             fluid={item.node.img.childImageSharp.fluid}
-            className="shadow-lg rounded-full max-w-full mx-auto"
+            className="shadow-lg rounded max-w-full mx-auto"
             style={{ maxWidth: "120px" }}
           />
           <div className="pt-10 mt-10 text-center">
@@ -50,7 +50,7 @@ const Partners = () => {
     return picArray
   }
   return (
-      <section className="pt-20 pb-24 items-center" style={{background: '#104C91'}}>
+      <section className="pt-20 pb-24 items-center"  id="partners">
         <div className="container mx-auto px-4" >
           <div className="flex flex-wrap justify-center text-center mb-24">
             <div className="w-full lg:w-6/12 px-4">
