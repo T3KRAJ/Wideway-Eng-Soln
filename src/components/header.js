@@ -58,8 +58,8 @@ const Header = props => {
                id="navLink"
                 to={link}
                 // activeClass="active"
-                spy={true.toString()}
-                smooth={true.toString()}
+                spy={'true'}
+                smooth={'true'}
                 offset={-70}
                 duration={500}
                 key={index}
@@ -141,6 +141,7 @@ const NavLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  transition: all 0.5s ease;
 `
 
 const Bars = styled(FaBars)`
