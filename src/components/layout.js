@@ -20,15 +20,16 @@ const Layout = ({children}) => {
   useEffect(() => {
     return typeof window !== 'undefined' ? localStorage.setItem("mode", JSON.stringify(dark)) : null
   }, [dark])
-
-
   return (
     <ShareContextProvider theme={dark}>
     <div className={dark? "dark-mode": "light-mode"}>
     <GlobalStyle />
       <Header theme = {dark}  setTheme={setMode} toggle={toggle}/>
       <Sidebar isOpen={isOpen} toggle={toggle} theme = {dark}  setTheme={setMode}/>
-        <main>{children}</main>
+        <main>
+        {children}
+
+        </main>
       <Footer />
     </div>
     </ShareContextProvider>

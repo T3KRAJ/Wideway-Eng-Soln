@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="md:h-screen items-center md:flex max-w-md overflow-hidden p-12 md:container md:mx-auto shadow-xl "
+      className="md:h-screen items-center md:flex max-w-md overflow-hidden p-12 md:container md:mx-auto "
     >
       <div
         style={{
