@@ -51,10 +51,13 @@ const Gallery = () => {
   }
   return (
     <ProductContainer>
-      <div className="text-black mb-10 mt-10 text-center">
-              <span className="uppercase tracking-wide text-black  text-4xl text-indigo-500 font-semibold mb-5 text-center" id="heading">
-                Gallery
-              </span>
+      <div className="text-black mb-10 text-center">
+      <h1 className="w-full my-2 text-5xl font-bold leading-tight text-indigo-500 text-center">
+          Gallery
+        </h1>
+        <div className="w-full mb-4">
+          <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
             </div>
       <ProductWrapper>{getPic(data)}</ProductWrapper>
     </ProductContainer>

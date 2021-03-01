@@ -21,11 +21,14 @@ const Services = (props) => {
   })
   return (
  
-    <div className="md:h-screen p-12 md:container md:mx-auto items-center text-center shadow-xl " id="services">
-        <h1 className="uppercase tracking-wide text-black text-4xl text-indigo-500 font-semibold text-center" id="heading">
-          Our Services
-        </h1>
-        <div className="-mx-4 flex flex-wrap my-24">
+    <div className="md:h-screen p-12 md:container md:mx-auto items-center text-center" id="services">
+        <h3 className="w-full my-2 text-5xl font-bold leading-tight text-indigo-500 text-center">
+          Services <span className="bg-danger h-1 w-20 block mt-4 object-top"></span>
+        </h3>
+        <div className="w-full mb-4">
+          <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t bg-danger"></div>
+        </div>
+        <div className="-mx-4 flex flex-wrap my-16">
           <ServiceCard src={innovative} service="Innovation" />
           <ServiceCard
             src={transportation}
