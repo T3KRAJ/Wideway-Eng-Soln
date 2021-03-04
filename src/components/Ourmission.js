@@ -10,7 +10,7 @@ export default function Ourmission() {
   return (
     <div
     id="mission"
-    className="md:h-screen items-center md:flex max-w-md overflow-hidden md:container md:mx-auto  "
+    className="md:h-screen items-center md:flex max-w-md  p-12 overflow-hidden md:container md:mx-auto  "
   >
     <div
       data-aos="fade-left"
@@ -19,7 +19,7 @@ export default function Ourmission() {
       <div>
         <div className="text-black mb-2 text-center">
           <span
-            className="uppercase tracking-wide text-black  text-4xl text-indigo-500 font-semibold mb-5 text-center"
+            className="uppercase tracking-wide text-black  text-4xl text-indigo-500 font-semibold text-center"
             id="heading"
           >
             Our Mission

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react"
-import { Link } from "gatsby"
+import { Link } from "react-scroll"
 import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
@@ -49,20 +49,19 @@ const Header = props => {
             <Logo src={navlogo} alt="logo" />
           </NavLink>
 
-          <Bars onClick={props.toggle} />
+          <Bars onClick={props.toggle} postn={scrollState}/>
           <NavMenu >
             {menuData.map(({ link, title }, index) => (
               <NavLink
                postn={scrollState}
                theme={props.theme !== null ? props.theme.toString(): null}
-               id="navLink"
-                to={link}
-                // activeClass="active"
-                spy={'true'}
-                smooth={'true'}
-                offset={-70}
-                duration={500}
-                key={index}
+               to={link}
+              key={index}
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
               >
                 {title}
               </NavLink>
@@ -113,10 +112,14 @@ const Bar = styled.div`
   z-index: 200;
   overflow: hidden;
   position: fixed;
+
 `
 
 const Info = styled.p`
   margin: 0 0px;
+  @media screen and (max-width: 760px) {
+    margin: 0 15px;
+  }
 `
 
 const MainNav = styled.nav`
@@ -130,6 +133,9 @@ const MainNav = styled.nav`
   z-index: 100;
   overflow: hidden;
   position: fixed;
+  @media screen and (max-width: 760px) {
+    height: ${({postn}) => (postn==="top" ? '72px' : '52px')};
+  }
 `
 
 const NavLink = styled(Link)`
@@ -148,10 +154,12 @@ const Bars = styled(FaBars)`
   display: none;
   color: #fff;
   @media screen and (max-width: 760px) {
+    color:${({postn, theme}) => (theme)? (postn==="top" ? '#104c92' : '#fff'): (postn==="top" ? '#fff' : '#fff')};
     display: block;
     position: absolute;
     top: 0;
     right: 0;
+    margin-top:${({postn}) => postn==="top" ? '-7px' : '-8.4px'};
     transform: translate(-100%, 75%);
     font-size: 1.8rem;
     cursor: pointer;

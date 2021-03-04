@@ -1,12 +1,9 @@
 import React, { useEffect } from "react"
-import innovative from "../assets/images/innovation.svg"
-import transportation from "../assets/images/transportation.svg"
-import factories from "../assets/images/factory1.svg"
-import ServiceCard from "./ServiceCard"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import AOS from "aos"
 
-
-const Services = (props) => {
+const Services = props => {
   useEffect(() => {
     const AOS = require("aos")
     AOS.init({
@@ -19,32 +16,68 @@ const Services = (props) => {
       AOS.refresh()
     }
   })
+
+  const data = useStaticQuery(graphql`
+  query ServicesQuery {
+    allServiceDataJson {
+      edges {
+        node {
+          img
+          desc
+          alt
+          title
+        }
+      }
+    }
+  }
+`)
+
+
+function getServices(data) {
+  const serviceArray = []
+  data.allServiceDataJson.edges.forEach((item, index) => {
+    serviceArray.push(
+          <div
+          key={index} data-aos="flip-right" data-aos-easing="linear" data-aos-duration="1500"
+            className="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5 w-full mx-auto rounded-3xl shadow-lg bg-white px-10 pt-16 pb-10 text-gray-600"
+            style={{ maxWidth: "325px" }}
+          >
+            <div className="w-full mb-10 text-center">
+              <Img
+                alt={item.node.alt}
+                fluid={item.node.img}
+                className="w-32 h-32 border rounded-full mx-auto mb-10"
+              />
+              <h2 className="font-bold text-xl text-indigo-500 mb-3">
+                {item.node.title}
+              </h2>
+              <p className="text-sm leading-tight h-12">
+                {item.node.desc}
+              </p>
+            </div>
+          </div>
+    )
+  })
+  return serviceArray
+}
+
   return (
- 
-    <div className="md:h-screen p-12 md:container md:mx-auto items-center text-center" id="services">
-        <h3 className="w-full my-2 text-5xl font-bold leading-tight text-indigo-500 text-center">
-          Services <span className="bg-danger h-1 w-20 block mt-4 object-top"></span>
-        </h3>
-        <div className="w-full mb-4">
-          <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t bg-danger"></div>
+    <div id="services">
+    <div className="container flex justify-center mx-auto pt-16 pb-8 sm:pb-4">
+        <div>
+          <h1 className="text-4xl text-indigo-500 font-semibold my-8">
+            What We Do
+          </h1>
         </div>
-        <div className="-mx-4 flex flex-wrap my-16">
-          <ServiceCard src={innovative} service="Innovation" />
-          <ServiceCard
-            src={transportation}
-            service="Hospitality and Transportation"
-          />
-          <ServiceCard src={factories} service="Manufacturing " />
-          <ServiceCard src={transportation} service=" Manufacturing " />
-          <ServiceCard src={factories} service="Innovation" />
-          <ServiceCard
-            src={transportation}
-            service=" Hospitality and Transportation"
-          />
+      </div>
+    <div className="w-full bg-gray-100 pt-8 sm:pb-4">
+      <div className="container mx-auto">
+        <div className="lg:flex md:flex sm:flex items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around">
+          {getServices(data)}
         </div>
+      </div>
     </div>
-    
+    </div>
   )
 }
 export default Services
-

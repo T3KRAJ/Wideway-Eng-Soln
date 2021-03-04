@@ -51,13 +51,10 @@ const Gallery = () => {
   }
   return (
     <ProductContainer>
-      <div className="text-black mb-10 text-center">
-      <h1 className="w-full my-2 text-5xl font-bold leading-tight text-indigo-500 text-center">
-          Gallery
-        </h1>
-        <div className="w-full mb-4">
-          <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-        </div>
+      <div>
+          <h1 className="text-4xl text-center text-indigo-500 font-semibold my-8">
+            Gallery
+          </h1>
             </div>
       <ProductWrapper>{getPic(data)}</ProductWrapper>
     </ProductContainer>
@@ -77,7 +74,7 @@ const ProductWrapper = styled.div`
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     justify-content: center;
-    padding: 0 2rem;
+    padding: 0 3rem;
     @media screen and (max-width: 1200px) {
         grid-template-columns: 1fr, 1fr;
     }
@@ -96,7 +93,7 @@ const ProductCard = styled.div`
 `
 
 const ProductImg = styled(Img)`
-  height: 100%;
+  height: 90%;
   max-width: 100%;
   position: relative;
   border-radius: 10px;

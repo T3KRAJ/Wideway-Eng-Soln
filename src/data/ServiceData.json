@@ -1,0 +1,28 @@
+[
+  
+    {
+        "img": "../assets/images/innovation.svg",
+        "alt": "service",
+        "title": "Innovative",
+        "desc": "It entirely by setting the container property to false in the corePlugins section of your config file:"
+    },
+    {
+        "img": "../assets/images/innovation.svg",
+        "alt": "service",
+        "title": "Transportation",
+        "desc": "It entirely by setting the container property to false in the corePlugins section of your config file:"
+    },
+    {
+        "img": "../assets/images/factory.svg",
+        "alt": "service",
+        "title": "Marketing",
+        "desc": "It entirely by setting the container property to false in the corePlugins section of your config file:"
+    },
+    {
+        "img": "../assets/images/factory1.svg",
+        "alt": "service",
+        "title": "Web Development",
+        "desc": "It entirely by setting the container property to false in the corePlugins section of your config file:"
+    }
+
+]
