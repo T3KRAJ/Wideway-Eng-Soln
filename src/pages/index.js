@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 import Services from "../components/Services"
 import "./index.css"
 import Partners from "../components/Partners"
-import Team from "../components/Team"
+// import Team from "../components/Team"
 const IndexPage = () => (
   
   <Layout>
@@ -19,7 +19,7 @@ const IndexPage = () => (
     <Services />
     <Gallery />
     <Partners />
-    <Team/>
+    {/* <Team/> */}
     <Contact />
   </Layout>
 )

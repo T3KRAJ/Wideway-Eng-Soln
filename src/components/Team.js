@@ -42,7 +42,7 @@ function Team() {
                   fluid={item.node.img}
                   className="rounded-full object-cover h-full w-full shadow-md"
                   style={{ maxWidth: "120px" }}
-                />{" "}
+                />
               </div>
             </div>
             <div className="px-6 mt-16">

@@ -1,6 +1,5 @@
 import React, { useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import AOS from "aos"
 
 const Services = props => {
@@ -22,14 +21,18 @@ const Services = props => {
     allServiceDataJson {
       edges {
         node {
-          img
-          desc
+          img {
+            extension
+            publicURL
+          }
           alt
+          desc
           title
         }
       }
     }
   }
+  
 `)
 
 
@@ -43,11 +46,12 @@ function getServices(data) {
             style={{ maxWidth: "325px" }}
           >
             <div className="w-full mb-10 text-center">
-              <Img
+            { (item.node.img.extension === 'svg') ?
+              <img
                 alt={item.node.alt}
-                fluid={item.node.img}
+                src={item.node.img.publicURL}
                 className="w-32 h-32 border rounded-full mx-auto mb-10"
-              />
+              /> : null}
               <h2 className="font-bold text-xl text-indigo-500 mb-3">
                 {item.node.title}
               </h2>
