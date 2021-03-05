@@ -55,7 +55,6 @@ function Hero() {
 export default Hero
 
 const HeroContainer = styled.div`
-  background: #000;
   height: 100vh;
   padding: 0;
   margin: 0;
