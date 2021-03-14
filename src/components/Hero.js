@@ -3,7 +3,7 @@ import AOS from "aos"
 import styled from "styled-components"
 import { Button } from "./Button"
 import HeroImg from "../assets/images/heroimg.svg"
-import BgImg from "../assets/images/hero.png"
+// import BgImg from "../assets/images/hero.png"
 import "aos/dist/aos.css"
 import {ShareContext} from "./ShareContextProvider"
 
@@ -21,7 +21,6 @@ function Hero() {
   return (
     <HeroContainer>
       <HeroBg style={{background:`${mode}`}} >
-      <Bg src={BgImg} alt="bg" />
       </HeroBg>
       <HeroContent>
         <HeroItems>
@@ -71,12 +70,12 @@ const HeroBg = styled.div`
   height: 100%;
   overflow: hidden;
 `
-const Bg = styled.img`
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-`
+// const Bg = styled.img`
+//   width: 100%;
+//   height: 100%;
+//   -o-object-fit: cover;
+//   object-fit: cover;
+// `
 
 const HeroPic = styled.img`
   width: 100%;
