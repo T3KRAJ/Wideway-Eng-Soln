@@ -8,42 +8,28 @@ const About = () => {
     AOS.init({ delay: 200, duration: 1200, once: false })
   })
   return (
-        <div
-      id="about"
-      className="md:h-screen items-center md:flex max-w-md overflow-hidden p-8 md:container mx-auto  "
-    >
-      <div
-        style={{
+    <div class="container mx-auto pt-20"
+     id="about">
+    <div class="w-full max-w-6xl p-10 lg:p-20 mx-auto md:text-left">
+      <h1 class="text-4xl text-center text-indigo-500 font-semibold my-8">About Us</h1>
+      <div class="md:flex items-center -mx-10">
+        <div class="w-full md:w-1/2 px-10 mb-10 md:mb-0">
+          <div class=""
+          style={{
           transformStyle: "preserve-3d",
           transform: "perspective(960px)",
-        }}
-        className="animate-none h-50 mt-16 md:h-auto lg:h-auto w-full md:w-1/3  lg:w-1/3  flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden p-4"
-      >
-        <img
-          className="h-50 md:h-auto lg:h-auto w-full md:w-full lg:w-full  flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden p-4"
-          src={logo}
-          title="Site's logo"
-          alt="logo"
-          data-aos="flip-left"
-        />
-      </div>
-
-      <div
-        data-aos="fade-left"
-        className="rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
-      >
-        <div>
-        <div>
-          <h1 className="text-4xl text-center text-indigo-500 font-semibold my-8">
-            About Us
-          </h1>
+        }}>
+            <img src={logo} class="w-full" alt="" data-aos="flip-left"/>
+          </div>
         </div>
-          <p className="text-grey-900 lg:pr-28 lg:pl-4 lg:text-normal">
+        <div class="w-full md:w-1/2 px-8" data-aos="fade-left">
+          <div class="mb-10">
+            <p class="text-lg font-sans text-primary-lighter ">
             Annihilation of the barriers between the nations has
             brovided a welcome opportunity to the international traders to
             broaden the market and take any commodity across the globe in order
             to strengthen the boods overseas. <br />
-            the thought of global trading we are providing consumers variety of
+            The thought of global trading we are providing consumers variety of
             goods with effective service and queater choice with regard to this
             chief motto is to<br />
             taking into consideration the wants and make a go of in this domain.
@@ -51,17 +37,20 @@ const About = () => {
             goods with effective service and queater choice with regard to this
             chief motto is to offer best and the contentment of the purchaser
             taking into consideration the wants and make a go of in this domain.
-          </p>
-        </div>
-        <div className="flex items-center sm:pt-4 lg:p-4 mt-4">
-          <div className="text-sm text-center">
-            <Button  primary="true" to="/contact">
-              Contact us
-            </Button>
+            </p>
+          </div>
+          <div>
+            <p className="mt-4 md:mt-8">
+              <Button size="sm" primary="true" className="border-none">
+              Get Started
+              </Button>
+            </p>
+
           </div>
         </div>
       </div>
     </div>
+  </div>
   )
 }
 export default About

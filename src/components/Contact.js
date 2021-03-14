@@ -12,7 +12,7 @@ const Contact = () => {
     >
       <div
         id="heading"
-        className="md:max-w-2xl w-full md:w-1/2 lg:w-1/2 text-center sm:text-left my-auto text-white-900"
+        className="md:max-w-2xl w-full md:w-1/2 lg:w-1/2 text-center sm:text-left lg:my-auto md:my-auto sm:my-8 text-white-900"
         data-aos="fade-right"
       >
         <div

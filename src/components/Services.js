@@ -74,9 +74,9 @@ const Services = props => {
           </h1>
         </div>
       </div>
-      <div className="w-full bg-gray-100 pt-8 sm:pb-4">
-        <div className="container mx-auto">
-          <div className="lg:flex md:flex sm:flex items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around">
+      <div className="w-full bg-gray-100 pt-12 sm:pb-4">
+        <div className="container mx-auto lg:px-20 sm:px:4">
+          <div className="flex items-center flex-wrap">
             {getServices(data)}
           </div>
         </div>
